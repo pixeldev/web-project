@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+:root {
+    --primary-100: #005B99;
+    --primary-200: #4e88ca;
+    --primary-300: #b7e9ff;
+    --accent-100: #FFD700;
+    --accent-200: #e9aa2b;
+    --text-100: #333333;
+    --text-200: #5c5c5c;
+    --text-300: #ffffff;
+    --bg-100: #F5F5F5;
+    --bg-200: #ebebeb;
+    --bg-300: #c2c2c2;
+}
+
+body {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 450;
+    font-style: normal;
+
+    background-color: var(--bg-100);
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar {
+    background-color: var(--primary-200);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 20px;
+    height: 75px;
+
+    font-size: large;
+}
+
+.navbar a {
+    color: var(--text-300);
+}
+
+.logo-navbar {
+    object-fit: cover;
+    height: 100%;
+    padding: 10px 350px 10px 25px;
+    box-sizing: border-box;
+}
+
+footer {
+    background-color: var(--accent-200);
+}

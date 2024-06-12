@@ -1,15 +1,18 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" xmlns="">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/normalize.css">
     <link rel="stylesheet" href="../../css/styles.css">
-    <link rel="icon" type="image/x-icon" href="../../image/favicon.ico"/>
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.ico"/>
     <title>FugaFix | Estado de solicitudes</title>
 </head>
 <body>
-<nav>
-    <a href="../../index.html"><p>Inicio</p></a>
+<nav class="navbar">
+    <img class="logo-navbar" src="../../images/imagotipo-500x500.svg" alt="FugaFix Imagotipo">
+    <a href="../../index.php"><p>Inicio</p></a>
     <a href="request-service.html"><p>Hacer Solicitud</p></a>
     <a href="requests-status.html"><p>Estado de las solicitudes</p></a>
     <a href="../account/account.html"><p>Cuenta</p></a>
@@ -20,13 +23,15 @@
     </header>
     <table>
         <thead>
-        <th>Num. Pedido</th>
-        <th>Tipo de Servicio</th>
-        <th>Fecha de Solicitud</th>
-        <th>Hora</th>
-        <th>Estado</th>
-        <th>Monto</th>
-        <th>Visualizar Evidencia</th>
+        <tr>
+            <th>Num. Pedido</th>
+            <th>Tipo de Servicio</th>
+            <th>Fecha de Solicitud</th>
+            <th>Hora</th>
+            <th>Estado</th>
+            <th>Monto</th>
+            <th>Visualizar Evidencia</th>
+        </tr>
         </thead>
         <tbody>
         <tr>
