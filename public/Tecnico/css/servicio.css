@@ -1,0 +1,20 @@
+:root{
+    --primary-100:#005B99;
+    --primary-200:#4e88ca;
+    --primary-300:#b7e9ff;
+    --accent-100:#FFD700;
+    --accent-200:#e9aa2b;
+    --text-100:#333333;
+    --text-200:#5c5c5c;
+    --text-300:#FFFFFF;
+    --bg-100:#F5F5F5;
+    --bg-200:#ebebeb;
+}
+
+.nombre_servicio{
+    background-color: var(--primary-100);
+    margin: 20px auto;
+    padding: 5px;
+    width: 50%;
+    border-radius: 30px;
+}
