@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="../../css/reset.css">
     <link rel="stylesheet" href="../../css/normalize.css">
     <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/servicio.css">
     <link rel="icon" type="image/x-icon" href="../../images/favicon.ico"/>
     <title>Fugafix | Servicio</title>
@@ -13,34 +14,38 @@
 <body>
 <header class="header">
     <img class="logo-navbar" src="../../images/imagotipo-500x500.svg" alt="Fugafix Imagotipo">
-    <div id="regresar">
-        <a href="../index.php"><h2>MENU PRINCIPAL</h2></a>
-    </div>
+    <button class="blue-button">
+        <a href="../index.php">MENU PRINCIPAL</a>
+    </button>
 </header>
 <main>
-    <section class="nombre_servicio">
-        <article class="servicionombre">
+    <section class="title-view">
+        <article class="type-service">
             <h2>SERVICIO 1.- Limpieza de tinaco</h2>
         </article>
     </section>
-    <div id="contenedor_flex">
-        <section class="descripcion_servicio">
-            <article id="info_cliente">
-                <p>Cliente ERICK MOSSO LINAREZ</p>
+    <div id="flex-container">
+        <section class="service-description">
+            <article id="client-info">
+                <h3>INFORMACION DEL CLIENTE</h3>
+                <p>Nombre del Cliente: ERICK MOSSO LINAREZ</p>
                 <p>Direccion: AV. 5 de mayo 350</p>
                 <p>Telefono de contacto: 554856987 </p>
             </article>
-            <article id="estatus">
+            <article id="status-info">
                 <h3>ESTATUS</h3>
                 <p>En PROGRESO</p>
             </article>
-            <article id="envio_evidencia">
-                <a href="evidences.php"><p>Enviar Evidencia </p></a>
+            <article id="send-evidence">
+                <h3>ENVIAR EVIDENCIA</h3>
+                <button class="yellow-button" id="button-send-evidence">
+                    <a href="evidences.php"><p>Presione para enviar imagenes del servicio </p></a>
+                </button>
             </article>
 
         </section>
-        <section class="material_necesario">
-            <div class="titulo">
+        <section class="material-necesary">
+            <div class="title">
                 <h3>MATERIAL NECESARIO</h3>
             </div>
             <article id="material">

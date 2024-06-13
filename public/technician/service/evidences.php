@@ -7,36 +7,37 @@
     <link rel="stylesheet" href="../../css/normalize.css">
     <link rel="stylesheet" href="../../css/styles.css">
     <link rel="stylesheet" href="../css/evidencias.css">
+    <link rel="stylesheet" href="../css/styles.css">
     <link rel="icon" type="image/x-icon" href="../../images/favicon.ico"/>
     <title>Fugafix | Evidencias de servicio</title>
 </head>
 <body>
 <header class="header">
     <img class="logo-navbar" src="../../images/imagotipo-500x500.svg" alt="Fugafix Imagotipo">
-    <div id="regresar">
-        <a href="../index.php"><h2>MENU PRINCIPAL</h2></a>
-    </div>
+    <button class="blue-button">
+        <a href="details.php">REGRESAR A DETALLES</a>
+    </button>
 </header>
 <main>
-    <section class="titulo">
-        <article class="servicionombre">
+    <section class="title-view">
+        <article class="name-service">
             <h2>ADJUNTE EVIDENCIAS DEL TRABAJO REALIZADO</h2>
         </article>
     </section>
-    <div id="contenedor_flex">
-        <article class="img_evidencia">
+    <div id="flex-container">
+        <article class="img-evidence">
             <p>adjunte imagen</p>
         </article>
-        <article class="img_evidencia">
+        <article class="img-evidence">
             <p>adjunte imagen</p>
         </article>
-        <article class="img_evidencia">
+        <article class="img-evidence">
             <p>adjunte imagen</p>
         </article>
     </div>
-    <section id="siguiente">
-        <a href="sucessful.php"><h2>Siguiente</h2></a>
-    </section>
+    <button class="yellow-button" id="button-advance-material">
+        <a href="used-material.php"> AVANZAR A EL  REPORTE DE MATERIAL</a>
+    </button>
 
 </main>
 <footer>

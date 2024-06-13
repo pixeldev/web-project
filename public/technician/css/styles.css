@@ -1,0 +1,30 @@
+@import url('../../css/styles.css');
+
+.red-button {
+    color: #d94646;
+    background-color: #d94646;
+    border-radius: 25px;
+    border-color: transparent;
+    padding: 8px 25px;
+}
+.blue-button {
+    background-color:  var(--primary-100);
+    border-radius: 25px;
+    border-color: transparent;
+    padding: 8px 25px;
+}
+.yellow-button {
+    background-color:  var(--accent-100);
+    border-radius: 25px;
+    border-color: transparent;
+    padding: 8px 25px;
+}
+.title-view{
+    text-align: center;
+    color: aliceblue;
+    background-color: var(--primary-100);
+    margin: 20px auto;
+    padding: 5px;
+    width: 50%;
+    border-radius: 30px;
+}

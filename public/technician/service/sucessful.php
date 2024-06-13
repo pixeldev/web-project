@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="../../css/reset.css">
     <link rel="stylesheet" href="../../css/normalize.css">
     <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/exito.css">
     <link rel="icon" type="image/x-icon" href="../../images/favicon.ico"/>
     <title>Fugafix | Servicio realizado</title>
@@ -13,19 +14,23 @@
 <body>
 <header class="header">
     <img class="logo-navbar" src="../../images/imagotipo-500x500.svg" alt="Fugafix Imagotipo">
-    <div id="regresar">
-        <a href="../index.php"><h2>MENU PRINCIPAL</h2></a>
-    </div>
+    <button class="blue-button">
+        <a href="../index.php">MENU PRINCIPAL</a>
+    </button>
 </header>
 <main>
-    <section id="gracias">
-        <h2>FELICIDADES; REALIZASE EL SERVICIO AHORA PIEDES REGERSAR AL MENU PRINCIPAL Y VER SI TIENES MAS POR
-            GACER</h2>
-    </section>
+
+    <article>
+        <h1>SERVICIO FINALIZADO CON EXITO</h1>
+    </article>
+    <article>
+        <h1>PUEDE VOLVER A LA PANTALLA PRINCIPAL</h1>
+    </article>
+
 
 </main>
 <footer>
-
+<p>2024 Fugafix. Todos los derechso reservados</p>
 </footer>
 </body>
 </html>
