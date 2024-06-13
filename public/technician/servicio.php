@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="css/servicio.css">
-    <title>SERVICIO</title>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico"/>
+    <title>Fugafix | Servicio</title>
 </head>
 <body>
 <header class="header">

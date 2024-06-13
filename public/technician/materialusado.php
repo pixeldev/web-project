@@ -6,7 +6,8 @@
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/styles.css">
-    <title>MATERIALUSADO</title>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico"/>
+    <title>Fugafix | Material usado</title>
 </head>
 <body>
 <h1>ACONTINUACION REGISTRARA TODO EL MATERIA LQUE USO PARA EL SERVICIO</h1>

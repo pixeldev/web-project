@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="css/pp.css">
-    <title>Pagina Principal</title>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico"/>
+    <title>Fugafix | Técnico</title>
 </head>
 <body>
 <header class="header">

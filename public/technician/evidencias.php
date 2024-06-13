@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="css/evidencias.css">
-    <title>EVIDENCIAS</title>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico"/>
+    <title>Fugafix | Evidencias de servicio</title>
 </head>
 <body>
 <header class="header">
