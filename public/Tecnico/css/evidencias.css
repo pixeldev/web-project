@@ -11,7 +11,7 @@
     --bg-200:#ebebeb;
 }
 
-.nombre_servicio{
+.titulo{
     background-color: var(--primary-100);
     margin: 20px auto;
     padding: 5px;
@@ -20,17 +20,21 @@
 }
 #contenedor_flex{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    text-align: center;
+    width: 85%;
+    margin: 20px auto;
 }
 #contenedor_flex>*{
-    width: 45%;
-    margin: 20px auto;
-
+    width: 30%;
+    margin: 20px 20px;
+    background-color: var(--primary-100);
+    border-radius: 50px;
+    border: 2px solid var(--accent-200);
+    padding: 100px;
 }
-.descripcion_servicio>*{
-    background-color: var(--bg-200);
-}
-
-#envio_evidencia{
+#siguiente{
     background-color: var(--accent-100);
+    text-align: right;
+    
 }

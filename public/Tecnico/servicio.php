@@ -4,44 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/pp.css">
-    <title>Pagina Principal</title>
+    <link rel="stylesheet" href="css/servicio.css">
+    <title>SERVICIO</title>
 </head>
 <body> 
     <header>
         <div>
         <img src="img/fflogo.png" alt="logoff">
         </div>
-        <div id="logout">
-            <h2>Cerrar Sesion</h2>
+        <div id="regresar">
+            <a href="index.php"><h2>Regresar</h2></a>
         </div>
     </header>
     <main>
-        <section class="nombre">
-            <article class="bienvenida">
-                <h2>Hola De nuevo XXXXXXX</h2>
+        <section class="nombre_servicio">
+            <article class="servicionombre">
+                <h2>SERVICIO 1.- Limpieza de tinaco</h2>
             </article>
         </section>
-        <div id="contenedorflex">
-            <section class="servicios">
-                <div class="titulo">
-                    <h3>SERVICIOS DE HOY</h3>
-                </div>
-                <h4>Presione para ver mas detalles del servicio</h4>
-                <article id ="no.servicio">
-                    <p>Limpieza de Tinaco</p>
+        <div id="contenedor_flex">
+            <section class="descripcion_servicio">
+                <article id ="info_cliente">
+                   <p>Cliente ERICK MOSSO LINAREZ</p>
+                   <p>Direccion: AV. 5 de mayo 350</p>
+                   <p>Telefono de contacto: 554856987 </p>
                 </article>
-                <article id ="no.servicio">
-                    <p>Reparacion de Fuga</p>
+                <article id ="estatus">
+                    <h3>ESTATUS</h3>
+                    <p>En PROGRESO</p>
                 </article>
-                <article id ="no.servicio">
-                    <p>Limpieza de Tinaco</p>
+                <article id ="envio_evidencia">
+                    <a href="evidencias.php"><p>Enviar Evidencia </p></a>
                 </article>
                 
             </section>
-            <section class="material">
+            <section class="material_necesario">
                 <div class="titulo">
-                    <h3>MATERIAL DISPONIBLE</h3>
+                    <h3>MATERIAL NECESARIO</h3>
                 </div>
                 <article id ="material">
                     <p>MATERIAL 1</p>
@@ -55,23 +54,12 @@
                 <article id ="material">
                     <p>MATERIAL 4</p>
                 </article>
-
-                <div id="generacion_reporte">
-                    <h4>GENERAR REPORTE</h4>
-                </div>
             </section>
         </div>
-
+        
     </main>
     <footer>
         
     </footer>
-
-
-
-
-
-
-    
 </body>
 </html>

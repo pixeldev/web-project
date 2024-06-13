@@ -11,10 +11,8 @@
     --bg-200:#ebebeb;
 }
 
-.nombre_servicio{
-    background-color: var(--primary-100);
-    margin: 20px auto;
-    padding: 5px;
-    width: 50%;
-    border-radius: 30px;
+#gracias{
+    background-color: var(--accent-100);
+padding: 80px;
+    
 }
