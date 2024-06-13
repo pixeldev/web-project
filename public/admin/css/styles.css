@@ -1,0 +1,9 @@
+@import url('../../css/styles.css');
+
+.red-button {
+    color: #d94646;
+    background-color: #d94646;
+    border-radius: 25px;
+    border-color: transparent;
+    padding: 8px 25px;
+}
