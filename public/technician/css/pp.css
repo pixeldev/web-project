@@ -1,19 +1,16 @@
 @import url('../../css/styles.css');
 
-/* bitib de kigiur oara regresar a ka oabtakka de ubucui s¿de sesuib */
-#logout {
-    background-color: var(--accent-100);
-    border-radius: 25px;
-    padding: 0 25px;
-}
+
 
 /* nombre  myen menasje de bienvenidad al tecnico */
-.nombre {
+.technician-welcome {
     background-color: var(--accent-200);
     margin: 20px auto;
     padding: 5px;
     width: 50%;
     border-radius: 30px;
+    margin: 20px auto;
+    text-align: center;
 }
 
 /* main se hace flex el unico hijo que es div */
@@ -25,13 +22,13 @@ main > div {
 
 }
 
-#contenedorflex > * {
+#flex-container > * {
     background-color: var(--bg-200);
     margin-right: auto;
 }
 
 /* clase de todos los titulos de las opciones que tenemos */
-.titulo {
+.title {
     background-color: var(--primary-100);
     padding: 5px;
     border-radius: 40px;
@@ -41,12 +38,12 @@ main > div {
 }
 
 /* contenedro donde se mostraran los servicios del dia para el tecnico */
-.servicios {
+.list-services {
     width: 45%;
     text-align: center;
 }
 
-.servicios > article {
+.list-services > article {
     background-color: var(--primary-300);
     border-radius: 8px;
     width: 80%;
@@ -55,8 +52,14 @@ main > div {
 }
 
 /* contendro donde se mostrar el materia lqeu el tecnico cuenta en almacemn */
-.material {
+.list-material {
     width: 45%;
     text-align: center;
+}
+.list-material>article{
+    background-color: var(--bg-100);
+    border: var(--accent-200) 2px solid;
+    border-radius: 20px;
+    margin: 20px 20px;
 }
 

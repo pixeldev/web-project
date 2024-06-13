@@ -1,6 +1,6 @@
 @import url('../../css/styles.css');
 
-.titulo {
+.title {
     background-color: var(--primary-100);
     margin: 20px auto;
     padding: 5px;
@@ -8,7 +8,7 @@
     border-radius: 30px;
 }
 
-#contenedor_flex {
+#flex-container {
     display: flex;
     flex-wrap: nowrap;
     text-align: center;
@@ -16,7 +16,7 @@
     margin: 20px auto;
 }
 
-#contenedor_flex > * {
+#flex-container > * {
     width: 30%;
     margin: 20px 20px;
     background-color: var(--primary-100);
@@ -25,7 +25,3 @@
     padding: 100px;
 }
 
-#siguiente {
-    background-color: var(--accent-100);
-    text-align: right;
-}

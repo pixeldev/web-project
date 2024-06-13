@@ -1,27 +1,40 @@
 @import url('../../css/styles.css');
 
-.nombre_servicio {
-    background-color: var(--primary-100);
-    margin: 20px auto;
-    padding: 5px;
-    width: 50%;
-    border-radius: 30px;
-}
 
-#contenedor_flex {
+
+#flex-container {
     display: flex;
     flex-wrap: wrap;
 }
 
-#contenedor_flex > * {
+#flex-container > * {
     width: 45%;
     margin: 20px auto;
 }
-
-.descripcion_servicio > * {
+.service-description > * {
     background-color: var(--bg-200);
+    margin: 20px auto;
+    border-radius: 10px;
+    padding: 2px 15px;
 }
 
-#envio_evidencia {
-    background-color: var(--accent-100);
+.material-necesary {
+    background-color: var(--bg-200);
+    border-radius: 10px;
+    width: 45%;
+    text-align: center;
+}
+
+.material-necesary>article{
+    background-color: var(--bg-100);
+    border: var(--accent-200) 2px solid;
+    border-radius: 20px;
+    margin: 20px 20px;
+}
+article>h3{
+    background-color:var(--primary-300);
+    width: 75%;
+    text-align: center;
+    margin: 10px auto;
+    border-radius: 15px;
 }

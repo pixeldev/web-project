@@ -6,26 +6,22 @@
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="css/exito.css">
     <link rel="icon" type="image/x-icon" href="../images/favicon.ico"/>
-    <title>Fugafix | Servicio realizado</title>
+    <title>Fugafix | Inicio</title>
 </head>
 <body>
 <header class="header">
     <img class="logo-navbar" src="../images/imagotipo-500x500.svg" alt="Fugafix Imagotipo">
-    <div id="regresar">
-        <a href="index.php"><h2>MENU PRINCIPAL</h2></a>
-    </div>
+    <a href="index.php"><p>Inicio</p></a>
+    <a href="service/request-service.html"><p>Hacer Solicitud</p></a>
+    <a href="service/requests-status.html"><p>Estado de las solicitudes</p></a>
+    <a href="account/account.html"><p>Cuenta</p></a>
 </header>
-<main>
-    <section id="gracias">
-        <h2>FELICIDADES; REALIZASE EL SERVICIO AHORA PIEDES REGERSAR AL MENU PRINCIPAL Y VER SI TIENES MAS POR
-            GACER</h2>
-    </section>
-
-</main>
+<section>
+    <h1>Esta le toca A Fergoasd</h1>
+</section>
 <footer>
-
+    <p>© 2024 Fugafix. Todos los derechos reservados.</p>
 </footer>
 </body>
 </html>
