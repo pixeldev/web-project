@@ -1,31 +1,22 @@
-:root{
-    --primary-100:#005B99;
-    --primary-200:#4e88ca;
-    --primary-300:#b7e9ff;
-    --accent-100:#FFD700;
-    --accent-200:#e9aa2b;
-    --text-100:#333333;
-    --text-200:#5c5c5c;
-    --text-300:#FFFFFF;
-    --bg-100:#F5F5F5;
-    --bg-200:#ebebeb;
-}
+@import url('../../css/styles.css');
 
-.titulo{
+.titulo {
     background-color: var(--primary-100);
     margin: 20px auto;
     padding: 5px;
     width: 50%;
     border-radius: 30px;
 }
-#contenedor_flex{
+
+#contenedor_flex {
     display: flex;
     flex-wrap: nowrap;
     text-align: center;
     width: 85%;
     margin: 20px auto;
 }
-#contenedor_flex>*{
+
+#contenedor_flex > * {
     width: 30%;
     margin: 20px 20px;
     background-color: var(--primary-100);
@@ -33,8 +24,8 @@
     border: 2px solid var(--accent-200);
     padding: 100px;
 }
-#siguiente{
+
+#siguiente {
     background-color: var(--accent-100);
     text-align: right;
-    
 }
