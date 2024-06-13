@@ -10,13 +10,13 @@
     <title>FugaFix | Inicio</title>
 </head>
 <body>
-<nav class="navbar">
+<header class="header">
     <img class="logo-navbar" src="images/imagotipo-500x500.svg" alt="FugaFix Imagotipo">
     <a href="index.php"><p>Inicio</p></a>
     <a href="user/service/request-service.html"><p>Hacer Solicitud</p></a>
     <a href="user/service/requests-status.html"><p>Estado de las solicitudes</p></a>
     <a href="user/account/account.html"><p>Cuenta</p></a>
-</nav>
+</header>
 <section>
     <h1>Esta le toca A Fergoasd</h1>
 </section>
