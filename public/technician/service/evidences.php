@@ -41,7 +41,7 @@
 
 </main>
 <footer>
-
+<p>© 2024 Fugafix. Todos los derechos reservados.</p>
 </footer>
 </body>
 </html>

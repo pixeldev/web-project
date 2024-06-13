@@ -20,9 +20,7 @@
 </header>
 <main>
     <section class="technician-welcome">
-        <article class="technician-name">
-            <h2>Hola De nuevo XXXXXXX</h2>
-        </article>
+            <h2>Hola de nuevo Tecnico Javier</h2>   
     </section>
     <div id="flex-container">
         <section class="list-services">
@@ -66,7 +64,7 @@
 
 </main>
 <footer>
-
+<p>2024 Fugafix. Todos los derechso reservados</p> 
 </footer>
 
 
