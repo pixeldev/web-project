@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="css/servicio.css">
-    <link rel="icon" type="image/x-icon" href="../images/favicon.ico"/>
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/normalize.css">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../css/servicio.css">
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.ico"/>
     <title>Fugafix | Servicio</title>
 </head>
 <body>
 <header class="header">
-    <img class="logo-navbar" src="../images/imagotipo-500x500.svg" alt="Fugafix Imagotipo">
+    <img class="logo-navbar" src="../../images/imagotipo-500x500.svg" alt="Fugafix Imagotipo">
     <div id="regresar">
-        <a href="index.php"><h2>MENU PRINCIPAL</h2></a>
+        <a href="../index.php"><h2>MENU PRINCIPAL</h2></a>
     </div>
 </header>
 <main>
@@ -35,7 +35,7 @@
                 <p>En PROGRESO</p>
             </article>
             <article id="envio_evidencia">
-                <a href="evidencias.php"><p>Enviar Evidencia </p></a>
+                <a href="evidences.php"><p>Enviar Evidencia </p></a>
             </article>
 
         </section>

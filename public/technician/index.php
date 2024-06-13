@@ -30,7 +30,7 @@
             </div>
             <h4>Presione para ver mas detalles del servicio</h4>
             <article id="no.servicio">
-                <a href="servicio.php"><p>Limpieza de Tinaco</p></a>
+                <a href="service/details.php"><p>Limpieza de Tinaco</p></a>
             </article>
             <article id="no.servicio">
                 <p>Reparacion de Fuga</p>
