@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="../../css/reset.css">
     <link rel="stylesheet" href="../../css/normalize.css">
     <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
     <link rel="icon" type="image/x-icon" href="../../images/favicon.ico"/>
     <title>Fugafix | Pago</title>
 </head>
@@ -18,9 +19,9 @@
     <a href="../account/account.html"><p>Cuenta</p></a>
 </header>
 <section>
-    <header>
+    <div id="Titulo">
         <h1>Realizar Pago</h1>
-    </header>
+    </div>
     <!--<form action="pago.php" method="post">
         <label for="nombre">Nombre del titular de la tarjeta</label>
         <input type="text" name="nombre" id="nombre" required>
@@ -39,19 +40,21 @@
             <img src="./imagenes/mastercard.png" alt="Mastercard">
             <img src="./imagenes/americanexpress.png" alt="American Express">
         </div>
-        <div id="DatosTarjetayTitular">
-            <p>Nombre del titular</p>
-            <p>Numero de Tarjeta</p>
-        </div>
-        <div id="DatosConfidenciales">
-            <div id="FechaExpiracion">
-                <p>Fecha de expiración</p>
-                <div id="MesAnio">
-                    <p>Mes</p>
-                    <p>Año</p>
-                </div>
+        <div id="ContenedorTarjeta">
+            <div id="DatosTarjetayTitular">
+                <p>Nombre del titular</p>
+                <p>Numero de Tarjeta</p>
             </div>
-            <p>CVV</p>
+            <div id="DatosConfidenciales">
+                <div id="FechaExpiracion">
+                    <p>Fecha de expiración</p>
+                    <div id="MesAnio">
+                        <p>Mes</p>
+                        <p>Año</p>
+                    </div>
+                </div>
+                <p>CVV</p>
+            </div>
         </div>
     </div>
 </section>

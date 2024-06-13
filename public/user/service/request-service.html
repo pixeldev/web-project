@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="../../css/reset.css">
     <link rel="stylesheet" href="../../css/normalize.css">
     <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
     <link rel="icon" type="image/x-icon" href="../../images/favicon.ico"/>
     <title>Fugafix | Solicitar servicio</title>
 </head>
@@ -18,34 +19,77 @@
     <a href="../account/account.html"><p>Cuenta</p></a>
 </header>
 <section>
-    <header>
+    <div id="Titulo">
         <h1>Formulario para solicitar servicios</h1>
-    </header>
+    </div>
     <div id="InformacionContacto">
         <h2>Información de contacto de quien recibirá el servicio</h2>
-        <p>Nombre(s):</p>
-        <p>Apellido Paterno:</p>
-        <p>Apellido Materno:</p>
-        <p>Calle:</p>
-        <p>Colonia:</p>
-        <p>Número Interior:</p>
-        <p>Número Exterior:</p>
-        <p>Alcaldia:</p>
-        <p>Telefono:</p>
+        <div id="ContenedorContacto">
+                <div id="ContenedorNombresNombre">
+                    <label for="Nombre">Nombre(s):</label>
+                    <input type="text" id="Nombre" name="Nombre" required>
+                </div>
+                <div id="ContenedorNombresApellidoPaterno">
+                    <label for="ApellidoPaterno">Apellido Paterno:</label>
+                    <input type="text" id="ApellidoPaterno" name="ApellidoPaterno" required>
+                </div>
+                <div id="ContenedorNombresApellidoMaterno">
+                    <label for="ApellidoMaterno">Apellido Materno:</label>
+                    <input type="text" id="ApellidoMaterno" name="ApellidoMaterno" required>
+                </div>
+                <div id="ContenedorDireccionCalle">
+                    <label for="Calle">Calle:</label>
+                    <input type="text" id="Calle" name="Calle" required>
+                </div>
+                <div id="ContenedorDireccionColonia">
+                    <label for="Colonia">Colonia:</label>
+                    <input type="text" id="Colonia" name="Colonia" required>
+                </div>
+                <div ID="ContenedorDireccionNumeroInterior">
+                    <label for="NumeroInterior">Número Interior:</label>
+                    <input type="text" id="NumeroInterior" name="NumeroInterior" required>
+                </div>
+                <div id="ContenedorTelefonoNumeroExterior">
+                    <label for="NumeroExterior">Número Exterior:</label>
+                    <input type="text" id="NumeroExterior" name="NumeroExterior" required>
+                </div>
+                <div id="ContenedorTelefonoAlcaldia">
+                    <label for="Alcaldia">Alcaldia:</label>
+                    <input type="text" id="Alcaldia" name="Alcaldia" required>
+                </div>
+                <div id="ContenedorTelefonoTelefono">
+                    <label for="Telefono">Teléfono:</label>
+                    <input type="text" id="Telefono" name="Telefono" required>
+                </div>
+        </div>
     </div>
     <div id="InformacionServicio">
         <h2>¿Qué tipo de servicio necesita?</h2>
-        <p>Limpieza de tinaco ($0.00 MXN)</p>
-        <p>Cambio de filtro ($0.00 MXN)</p>
-        <p>Reparación de fuga ($0.00 MXN)</p>
+        <div id="ContenedorOpciones">
+            <p id="CheckMark"></p>
+            <p>Limpieza de tinaco ($0.00 MXN)</p>
+            <p id="CheckMark2"></p>
+            <p>Cambio de filtro ($0.00 MXN)</p>
+            <p id="CheckMark3"></p>
+            <p>Reparación de fuga ($0.00 MXN)</p>
+        </div>
     </div>
     <div id="InformacionFecha">
         <h2>¿Cuándo necesita el servicio?</h2>
-        <p>Fecha:</p>
-        <p>Hora:</p>
+        <div id="ContenedorFechas">
+            <div id="FechaYFormulario">
+                <p>Fecha:</p>
+                <p id="Relleno15"></p>
+            </div>
+            <div id="HoraYFormulario">
+                <p>Hora:</p>
+                <p id="Relleno16"></p>
+            </div>
+        </div>
     </div>
     <div id="DescripcionProblema">
         <h2>Agregue información adicional sobre el problema</h2>
+        <p id="Cuadrada">.</p>
     </div>
 </section>
 </body>

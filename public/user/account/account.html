@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="../../css/reset.css">
     <link rel="stylesheet" href="../../css/normalize.css">
     <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
     <link rel="icon" type="image/x-icon" href="../../images/favicon.ico"/>
     <title>Fugafix | Cuenta</title>
 </head>
@@ -18,16 +19,22 @@
     <a href="account.html"><p>Cuenta</p></a>
 </header>
 <section>
-    <header>
+    <div id="Titulo">
         <h1>Información de la cuenta</h1>
-    </header>
+    </div>
     <div id="InformacionCuenta">
         <h2>Información de la cuenta</h2>
-        <p>Nombre(s):</p>
-        <p>Apellido Paterno:</p>
-        <p>Apellido Materno:</p>
+        <div id="ContenedorNombres">
+            <p>Nombre(s):</p>
+            <p id="Relleno">------------------</p>
+            <p>Apellido Paterno:</p>
+            <p id="Relleno2">-----------------</p>
+            <p>Apellido Materno:</p>
+            <p id="Relleno3">-----------------</p>
+        </div>
         <p>Correo Electrónico:</p>
-        <div>
+        <p id="Relleno4">-----------------</p>
+        <div id="ContenedorDireccion">
             <h3>Direccion Asociada</h3>
             <p>Calle:</p>
             <p>Colonia:</p>
@@ -44,7 +51,7 @@
         <p>Eliminar Cuenta</p>
     </div>
     <div id="BotonCerrarSesion">
-
+        <a href="../../index.php"><p>Cerrar Sesion</p></a>
     </div>
 </section>
 </body>
