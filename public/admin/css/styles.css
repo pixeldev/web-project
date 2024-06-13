@@ -1,9 +1,68 @@
 @import url('../../css/styles.css');
 
-.red-button {
-    color: #d94646;
-    background-color: #d94646;
+button {
     border-radius: 25px;
-    border-color: transparent;
     padding: 8px 25px;
+}
+
+.red-button {
+    background-color: #d94646;
+    border-color: #d23939;
+}
+
+.accent-button {
+    background-color: var(--accent-200);
+    border-color: var(--accent-100);
+}
+
+button a {
+    color: var(--text-300);
+    text-decoration: none;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 500;
+}
+
+main {
+    margin-top: 100px;
+}
+
+#admin-details-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 25px;
+    margin-bottom: 75px;
+}
+
+#admin-details-section article {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+    margin-bottom: 25px;
+}
+
+#admin-details-section article div {
+    padding: 35px;
+    margin: 0;
+
+    width: 450px;
+    height: 100px;
+
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#admin-details-section article div h2 {
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+#admin-details-section article div p {
+    margin-bottom: 10px;
+    font-weight: 200;
 }
