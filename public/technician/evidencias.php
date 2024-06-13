@@ -12,7 +12,7 @@
 </head>
 <body>
 <header class="header">
-    <img class="logo-navbar" src="../images/imagotipo-500x500.svg" alt="FugaFix Imagotipo">
+    <img class="logo-navbar" src="../images/imagotipo-500x500.svg" alt="Fugafix Imagotipo">
     <div id="regresar">
         <a href="index.php"><h2>MENU PRINCIPAL</h2></a>
     </div>
