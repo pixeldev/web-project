@@ -66,32 +66,41 @@
     <div id="InformacionServicio">
         <h2>¿Qué tipo de servicio necesita?</h2>
         <div id="ContenedorOpciones">
-            <p id="CheckMark"></p>
-            <p>Limpieza de tinaco ($0.00 MXN)</p>
-            <p id="CheckMark2"></p>
-            <p>Cambio de filtro ($0.00 MXN)</p>
-            <p id="CheckMark3"></p>
-            <p>Reparación de fuga ($0.00 MXN)</p>
+            <form>
+                <input type="checkbox" id="LimpiezaTinaco" name="LimpiezaTinaco" value="LimpiezaTinaco">
+                <label for="LimpiezaTinaco">Limpieza de tinaco ($00.00 MXN)</label>
+                <input type="checkbox" id="CambioFiltro" name="CambioFiltro" value="CambioFiltro">
+                <label for="CambioFiltro">Cambio de filtro ($00.00 MXN)</label>
+                <input type="checkbox" id="ReparacionFuga" name="ReparacionFuga" value="ReparacionFuga">
+                <label for="ReparacionFuga">Reparación de fuga ($00.00 MXN)</label>
+            </form>
         </div>
     </div>
     <div id="InformacionFecha">
         <h2>¿Cuándo necesita el servicio?</h2>
         <div id="ContenedorFechas">
             <div id="FechaYFormulario">
-                <p>Fecha:</p>
-                <p id="Relleno15"></p>
-            </div>
-            <div id="HoraYFormulario">
-                <p>Hora:</p>
-                <p id="Relleno16"></p>
+                <form>
+                    <label for="Fecha">Fecha:</label>
+                    <input type="date" id="Fecha" name="Fecha" required><br><br>
+                    <label for="Hora">Hora:</label>
+                    <input type="time" id="Hora" name="Hora" required>
+                </form>
             </div>
         </div>
     </div>
     <div id="DescripcionProblema">
-        <h2>Agregue información adicional sobre el problema</h2>
-        <p id="Cuadrada">.</p>
+        <form>
+            <h2>Describa el problema</h2>
+            <div id="DescripcionProblemas">
+                <label for="Descripcion"></label>
+                <textarea id="Descripcion" name="Descripcion" rows="7" cols="75" required></textarea>
+            </div>
+        </form>
     </div>
 </section>
+<footer>
+    <p>© 2024 FugaFix. Todos los derechos reservados.</p>
+</footer>
 </body>
-
 </html>

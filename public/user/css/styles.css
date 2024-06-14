@@ -96,12 +96,12 @@ div[id*="ContenedorNombres"],div[id*="ContenedorDireccion"],div[id*="ContenedorT
     align-items: center;
     width: 80%;
 }
-#Cuadrada{
+textarea[id*=Descripci]{
     background-color: var(--primary-300);
     border-radius: 10px;
-    width: 80%;
+}
+#DescripcionProblemas{
     margin-left: 10%;
-    padding-bottom: 15%;
 }
 
 input{
@@ -117,4 +117,12 @@ input{
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 5px 5px;
+}
+
+form{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    width: 80%;
+    margin-left: 10%;
 }
