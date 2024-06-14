@@ -124,7 +124,7 @@ input{
 
 form{
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-around;
     width: 90%;
 }
@@ -148,4 +148,52 @@ th{
 }
 img{
     height: 100px;
+}
+#ImagenesTarjetas{
+    align-items: center;
+    text-align: center;
+}
+div[id*="card"]{
+    display: flex;
+    flex-wrap: wrap;
+}
+#ContenedorTarjeta{
+    width: 80%;
+    margin-left: 10%;
+}
+#imagesForFun{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+#yesButton{
+    align-items: center;
+    text-align: center;
+}
+#contentCardInfo {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 5px 10px;
+}
+#MesAnio{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+div[id*="card"] label,div[id*="card"] input{
+    width: 100%;
+    text-align: center;
+}
+button[type="submit"]{
+    background-color: var(--primary-200);
+    color: var(--text-300);
+    border-color: transparent;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+    text-align: center;
 }

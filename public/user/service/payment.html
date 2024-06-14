@@ -22,17 +22,6 @@
     <div id="Title">
         <h1>Realizar Pago</h1>
     </div>
-    <!--<form action="pago.php" method="post">
-        <label for="nombre">Nombre del titular de la tarjeta</label>
-        <input type="text" name="nombre" id="nombre" required>
-        <label for="numero">Número de tarjeta</label>
-        <input type="text" name="numero" id="numero" required>
-        <label for="fecha">Fecha de expiración</label>
-        <input type="text" name="fecha" id="fecha" required>
-        <label for="cvv">CVV</label>
-        <input type="text" name="cvv" id="cvv" required>
-        <input type="submit" value="Pagar">
-    </form>-->
     <div id="PagoConTarjeta">
         <h2>Tarjetas de crédito o débito aceptadas</h2>
         <div id="ImagenesTarjetas">
@@ -41,21 +30,36 @@
             <img src="./images/americanExpress.png" alt="American Express">
         </div>
         <div id="ContenedorTarjeta">
-            <div id="DatosTarjetayTitular">
-                <p>Nombre del titular</p>
-                <p>Numero de Tarjeta</p>
-            </div>
-            <div id="DatosConfidenciales">
-                <div id="FechaExpiracion">
-                    <p>Fecha de expiración</p>
-                    <div id="MesAnio">
-                        <p>Mes</p>
-                        <p>Año</p>
+            <form>
+                <div id="contentCardInfo">
+                    <div id="cardOwner">
+                        <label for="NombreTitular">Nombre del titular</label>
+                        <input type="text" id="NombreTitular" name="NombreTitular" required>
+                    </div>
+                    <div id="cardNumber">
+                        <label for="NumeroTarjeta">Número de tarjeta</label>
+                        <input type="text" id="NumeroTarjeta" name="NumeroTarjeta" required>
+                    </div>
+                    <div id="cardDate">
+                        <label for="FechaExpiracion">Fecha de expiración</label>
+                        <div id="MesAnio">
+                            <input type="text" id="Mes" name="Mes" required>
+                            <input type="text" id="Anio" name="Anio" required>
+                        </div>
+                    </div>
+                    <div id="cardCVV">
+                        <label for="CVV">CVV</label><p>
+
+                    </p>
+                        <input type="text" id="CVV" name="CVV" required>
                     </div>
                 </div>
-                <p>CVV</p>
-            </div>
+                <div id="contentButton">
+                    <button type="submit">Pagar</button>
+                </div>
+            </form>
         </div>
+
     </div>
 </section>
 <footer>
