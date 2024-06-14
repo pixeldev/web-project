@@ -14,7 +14,7 @@
 <header class="header">
     <img class="logo-navbar" src="../images/imagotipo-500x500.svg" alt="Fugafix Imagotipo">
     <button class="red-button">
-        <a href="../user/index.php">Cerrar sesión</a>
+        <a href="../index.php">Cerrar sesión</a>
     </button>
 </header>
 <main>
