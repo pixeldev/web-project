@@ -22,29 +22,6 @@ section > :not(:first-child) {
     border-radius: 10px;
 }
 
-#editionButtons, #ContenedorNombres,#ContenedorContacto,#ContenedorOpciones{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-}
-
-#ContenedorFechas{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-#editionButtons p{
-    padding: 10px;
-    margin: 10px;
-}
-
-#closeSessionButton,#BotonSolicitar,#SaveButton{
-    color: var(--text-300);
-    padding: 20px;
-    text-align: center;
-}
-
 h2{
     font-weight: bold;
     font-size: 1.5em;
@@ -56,31 +33,9 @@ h3{
     font-size: 1.2em;
     text-align: left;
 }
-p[id*=Relleno]{
-    background-color: var(--primary-300);
-    border-radius: 10px;
-    width: 150px;
-}
-p[id*=CheckMark]{
-    background-color: var(--primary-300);
-    border-radius: 10px;
-    width: 1%;
-}
 
 p{
     padding: 10px;
-}
-
-#ContenedorNombres,#ContenedorDireccion,#ContenedorTelefono{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-}
-
-#ContenedorDireccion {
-    margin-right: 5px;
 }
 
 div[id*="ContenedorNombres"],div[id*="ContenedorDireccion"],div[id*="ContenedorTelefono"]{
@@ -92,21 +47,10 @@ div[id*="ContenedorNombres"],div[id*="ContenedorDireccion"],div[id*="ContenedorT
     margin-top: 10px;
 
 }
-#FechaYFormulario,#HoraYFormulario{
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    align-items: center;
-    width: 80%;
-}
 textarea[id*=Descripci]{
     background-color: var(--primary-300);
     border-radius: 10px;
 }
-#DescripcionProblemas{
-    margin-left: 10%;
-}
-
 input{
     background-color: var(--primary-300);
     border-color: transparent;
@@ -114,14 +58,6 @@ input{
     margin-left: 7px;
     padding: 5px;
 }
-#ContenedorContacto{
-    display: grid;
-    grid-auto-columns: 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 5px 5px;
-}
-
 form{
     display: flex;
     flex-wrap: wrap;
@@ -148,6 +84,51 @@ th{
 }
 img{
     height: 100px;
+}
+
+#editionButtons, #ContenedorNombres,#ContenedorContacto,#ContenedorOpciones{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#ContenedorFechas{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#editionButtons p{
+    padding: 10px;
+    margin: 10px;
+}
+
+#closeSessionButton,#BotonSolicitar,#SaveButton{
+    color: var(--text-300);
+    padding: 20px;
+    text-align: center;
+}
+
+#ContenedorDireccion {
+    margin-right: 5px;
+}
+#FechaYFormulario{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+}
+#DescripcionProblemas{
+    margin-left: 10%;
+}
+
+#ContenedorContacto{
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 5px 5px;
 }
 #ImagenesTarjetas{
     align-items: center;
@@ -188,6 +169,7 @@ div[id*="card"] label,div[id*="card"] input{
     width: 100%;
     text-align: center;
 }
+
 button[type="submit"]{
     background-color: var(--primary-200);
     color: var(--text-300);
