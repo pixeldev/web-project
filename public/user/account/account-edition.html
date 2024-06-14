@@ -19,29 +19,49 @@
     <a href="account.html"><p>Cuenta</p></a>
 </header>
 <section>
-    <div id="Titulo">
+    <div id="Title">
         <h1>Información de la cuenta</h1>
     </div>
-    <div id="InformacionCuenta">
-        <h2>Editar datos de Cuenta</h2>
-        <p>Nombre(s):</p>
-        <p>Apellido Paterno:</p>
-        <p>Apellido Materno:</p>
-        <p>Correo Electrónico:</p>
-        <div>
-            <h3>Direccion Asociada</h3>
-            <p>Calle:</p>
-            <p>Colonia:</p>
-            <p>Número Interior:</p>
-            <p>Número Exterior:</p>
-            <p>Alcaldia:</p>
-            <p>Código Postal</p>
+    <div id="accountInformation">
+        <h2>Información de la cuenta</h2>
+        <div id="InformationUser">
+            <label for="nombre">Nombre(s):</label>
+            <input type="text" id="nombre" name="nombre" value="PedroPe" class="readonly" readonly><br><br>
+            <label for="apellidoPaterno">Apellido Paterno:</label>
+            <input type="text" id="apellidoPaterno" name="apellidoPaterno" value="Perez" class="readonly" readonly><br><br>
+            <label for="apellidoMaterno">Apellido Materno:</label>
+            <input type="text" id="apellidoMaterno" name="apellidoMaterno" value="Perez" class="readonly" readonly><br><br>
+            <label for="CorreoElectronico">Correo Electrónico:</label>
+            <input type="text" id="CorreoElectronico" name="CorreoElectronico" value="pedrope@hotmail.com" class="readonly" readonly><br><br>
         </div>
-        <p>Telefono:</p>
-        <p>Contraseña:</p>
+        <h3>Direccion Asociada</h3>
+        <br>
+        <div id="InformationAddress">
+            <label for="Calle">Calle:</label>
+            <input type="text" id="Calle" name="Calle" value="Calle 1" class="readonly" readonly><br><br>
+            <label for="Colonia">Colonia:</label>
+            <input type="text" id="Colonia" name="Colonia" value="Colonia 1" class="readonly" readonly><br><br>
+            <label for="NumeroInterior">Número Interior:</label>
+            <input type="text" id="NumeroInterior" name="NumeroInterior" value="1" class="readonly" readonly><br><br>
+            <label for="NumeroExterior">Número Exterior:</label>
+            <input type="text" id="NumeroExterior" name="NumeroExterior" value="1" class="readonly" readonly><br><br>
+            <label for="Alcaldia">Alcaldia:</label>
+            <input type="text" id="Alcaldia" name="Alcaldia" value="Alcaldia 1" class="readonly" readonly><br><br>
+            <label for="CodigoPostal">Código Postal:</label>
+            <input type="text" id="CodigoPostal" name="CodigoPostal" value="12345" class="readonly" readonly><br><br>
+        </div>
+        <h3>Medios de Contacto</h3><br>
+        <div id="InformationContact">
+            <label for="Telefono">Telefono:</label>
+            <input type="text" id="Telefono" name="Telefono" value="1234567890" class="readonly" readonly><br><br>
+            <label for="Contrasena">Contraseña:</label>
+            <input type="password" id="Contrasena" name="Contrasena" value="1234567890" class="readonly" readonly><br><br>
+        </div>
     </div>
-    <div id="BotonGuardar">
-        <a href="account.html"><p>Guardar Cambios</p></a>
+    <div id="SaveButton">
+        <button id="SaveDataButton">
+            <a href="account.html"><p>Guardar Cambios</p></a>
+            </button>
     </div>
 </section>
 <footer>

@@ -1,4 +1,4 @@
-#Titulo{
+#Title{
     background-color: var(--primary-100);
     color: var(--text-300);
     padding: 7px;
@@ -8,6 +8,7 @@
     position: relative;
     top: 10px;
 }
+
 section > :not(:first-child) {
     background-color: var(--bg-200);
     padding: 10px;
@@ -15,12 +16,13 @@ section > :not(:first-child) {
     text-align: left;
     width: 60%;
     position: relative;
-    margin-top: 5%;
+    margin-top: 20px;
+    margin-bottom: 30px;
     left: 20%;
     border-radius: 10px;
 }
 
-#BotonesEdicion, #ContenedorNombres,#ContenedorContacto,#ContenedorOpciones{
+#editionButtons, #ContenedorNombres,#ContenedorContacto,#ContenedorOpciones{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -32,13 +34,12 @@ section > :not(:first-child) {
     flex-wrap: wrap;
 }
 
-#BotonesEdicion p{
+#editionButtons p{
     padding: 10px;
     margin: 10px;
 }
 
-#BotonCerrarSesion{
-    background-color: var(--accent-200);
+#closeSessionButton,#BotonSolicitar,#SaveButton{
     color: var(--text-300);
     padding: 20px;
     text-align: center;
@@ -48,10 +49,12 @@ h2{
     font-weight: bold;
     font-size: 1.5em;
     margin-bottom: 20px;
+    text-align: left;
 }
 h3{
     font-weight: bold;
     font-size: 1.2em;
+    text-align: left;
 }
 p[id*=Relleno]{
     background-color: var(--primary-300);
@@ -123,6 +126,8 @@ form{
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-around;
-    width: 80%;
-    margin-left: 10%;
+    width: 90%;
+}
+div[id*="Information"]{
+    margin-left: 20px;
 }
