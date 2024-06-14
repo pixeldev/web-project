@@ -15,26 +15,45 @@
     background-color: var(--bg-200);
     margin: 20px auto;
     border-radius: 10px;
-    padding: 2px 15px;
+    padding: 4px 15px;
 }
 
 .material-necesary {
     background-color: var(--bg-200);
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
     width: 45%;
-    text-align: center;
+    align-items: center;
+    align-content: center;
 }
-
+#status-info>p{
+    background-color: var(--primary-300);
+    border-radius: 25px;
+    width: 50%;
+    text-align: center;
+    margin: 0px auto;
+}
 .material-necesary>article{
     background-color: var(--bg-100);
     border: var(--accent-200) 2px solid;
     border-radius: 20px;
     margin: 20px 20px;
+    padding: 10px 12px;
 }
-article>h3{
-    background-color:var(--primary-300);
+#send-evidence{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h2{
+    background-color:var(--primary-100);
     width: 75%;
     text-align: center;
     margin: 10px auto;
     border-radius: 15px;
+    padding: 5px;
+}
+p{
+    padding:5px;
 }

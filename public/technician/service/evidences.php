@@ -21,23 +21,28 @@
 <main>
     <section class="title-view">
         <article class="name-service">
-            <h2>ADJUNTE EVIDENCIAS DEL TRABAJO REALIZADO</h2>
+            <h2>EVIDENCIAS</h2>
         </article>
     </section>
-    <div id="flex-container">
-        <article class="img-evidence">
-            <p>adjunte imagen</p>
-        </article>
-        <article class="img-evidence">
-            <p>adjunte imagen</p>
-        </article>
-        <article class="img-evidence">
-            <p>adjunte imagen</p>
-        </article>
-    </div>
-    <button class="yellow-button" id="button-advance-material">
-        <a href="used-material.php"> AVANZAR A EL  REPORTE DE MATERIAL</a>
-    </button>
+    <section class="evidence-container">
+        <h3>Favor de adjuntar evidencias del trabajo realizado</h3>
+        <div id="flex-container">
+            <article class="img-evidence">
+                <p>adjunte imagen</p>
+            </article>
+            <article class="img-evidence">
+                <p>adjunte imagen</p>
+            </article>
+            <article class="img-evidence">
+                <p>adjunte imagen</p>
+            </article>
+        </div>
+    </section>
+    <section class="container-button">
+        <button class="yellow-button" id="button-advance-succes">
+            <a href="sucessful.php"> FINALIZAR SERVICIO</a>
+        </button>
+    </section>
 
 </main>
 <footer>
