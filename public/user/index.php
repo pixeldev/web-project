@@ -94,7 +94,7 @@
             </div>
         </div>
         <div class="buttonContainer">
-            <a href="login/login.php"><p>Contrata un Servicio</p></a>
+            <a href="service/request-service.html"><p>Contrata un Servicio</p></a>
         </div>
     </section>
 </main>
