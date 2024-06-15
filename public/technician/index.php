@@ -20,7 +20,7 @@
 </header>
 <main>
     <section class="technician-welcome">
-            <h2>Hola de nuevo Tecnico Javier</h2>   
+            <h1>Hola de nuevo Tecnico Javier</h1>   
     </section>
     <div id="flex-container">
         <section class="list-services">
@@ -39,7 +39,7 @@
             </article>
 
         </section>
-        <section class="list-material">
+        <!-- <section class="list-material">
             <div class="title">
                 <h2>MATERIAL DISPONIBLE</h2>
             </div>
@@ -59,7 +59,7 @@
             <button class="blue-button"id="button-generate-material-report">
                 <a href="index.php">GENERAR REPORTE </a>
             </button>
-        </section>
+        </section> -->
     </div>
 
 </main>

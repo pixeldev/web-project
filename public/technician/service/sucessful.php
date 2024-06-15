@@ -19,13 +19,17 @@
     </button>
 </header>
 <main>
-
-    <article>
-        <h1>SERVICIO FINALIZADO CON EXITO</h1>
-    </article>
-    <article>
-        <h1>PUEDE VOLVER A LA PANTALLA PRINCIPAL</h1>
-    </article>
+    <section class="succesful">
+        <article class="title">
+            <h1>SERVICIO FINALIZADO CON EXITO</h1>
+        </article>
+        <article id="motivation">
+            <h2>¡Felicitaciones por completar otro servicio con éxito! Tu dedicación y esfuerzo son fundamentales 
+                para mantener la satisfacción de nuestros clientes y el buen nombre de nuestra empresa. Cada tarea
+                construye confianza y demuestra tu profesionalismo.Gracias por tu compromiso y por siempre dar lo mejor de ti.
+                ¡Estamos orgullosos de tenerte en nuestro equipo y confiamos en que seguirás alcanzando grandes logros!</h2>
+        </article>
+    </section>
 
 
 </main>

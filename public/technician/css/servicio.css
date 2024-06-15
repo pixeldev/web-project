@@ -13,9 +13,10 @@
 }
 .service-description > * {
     background-color: var(--bg-200);
-    margin: 20px auto;
+    margin: 30px auto;
     border-radius: 10px;
     padding: 4px 15px;
+    box-shadow:  15px 25px  45px var(--bg-300);
 }
 
 .material-necesary {
@@ -26,13 +27,15 @@
     width: 45%;
     align-items: center;
     align-content: center;
+    box-shadow:  15px 25px  45px var(--bg-300);
 }
-#status-info>p{
-    background-color: var(--primary-300);
-    border-radius: 25px;
-    width: 50%;
-    text-align: center;
-    margin: 0px auto;
+
+#status-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+
 }
 .material-necesary>article{
     background-color: var(--bg-100);
@@ -57,3 +60,12 @@ h2{
 p{
     padding:5px;
 }
+#status-select {
+    background-color: var(--bg-100);
+    border-color: var(--primary-200);
+    text-align: center;
+    margin: 0px auto;
+    padding: 8px;
+    border-radius: 25px;
+}
+
