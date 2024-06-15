@@ -2,7 +2,12 @@
 
 button {
     border-radius: 25px;
-    padding: 8px 25px;
+    padding: 10px 25px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 450;
+    color: var(--text-300);
+    border: 2px solid;
 }
 
 .red-button {
@@ -27,42 +32,29 @@ h1 {
 
 main {
     margin-top: 100px;
-}
-
-#admin-details-section {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
-
-    margin-top: 25px;
-    margin-bottom: 75px;
+    margin-bottom: 100px;
 }
 
-#admin-details-section article {
-    display: flex;
-    align-items: center;
-    gap: 50px;
-
-    margin-bottom: 25px;
-}
-
-#admin-details-section article div {
-    padding: 35px;
-    margin: 0;
-
-    width: 450px;
-    height: 100px;
-
+select {
+    -webkit-appearance: none;
+    padding: 10px 25px;
     border-radius: 25px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: var(--accent-200);
+    border-color: var(--accent-100);
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 450;
+    color: var(--text-300);
+    text-align: center;
 }
 
-#admin-details-section article div h2 {
-    margin-bottom: 10px;
-    font-weight: 400;
-}
-
-#admin-details-section article div p {
-    margin-bottom: 10px;
-    font-weight: 200;
+select option {
+    padding: 10px 25px;
+    background-color: var(--accent-200);
+    border-color: var(--accent-100);
+    color: var(--text-300);
+    text-align: center;
 }

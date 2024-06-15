@@ -1,0 +1,112 @@
+#login-main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+#contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    /* border: 2px #000 solid; */
+    background-color: var(--bg-300);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 20px;
+    width: 80%;
+}
+
+.loginMenu {
+    width: 700px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.formulario {
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.formulario h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 500;
+    color: var(--primary-100);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.formulario div {
+    margin: 20px auto 20px auto;
+    /* border: #000 2px solid; */
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.formulario label {
+    margin: 0 10px 5px 10px;
+    font-weight: bold;
+    color: var(--text-100);
+}
+
+.formulario input {
+    padding: 5px;
+    border: 1px solid var(--bg-300);
+    border-radius: 5px;
+    color: var(--text-100);
+}
+
+.formulario .buttonContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formulario button {
+    padding: 10px;
+    width: 150px;
+
+    font-size: 17px;
+    font-weight: 600;
+    background-color: var(--accent-200);
+    color: var(--primary-100);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.formulario p {
+    margin-top: 10px;
+    text-align: right;
+    color: var(--text-200);
+}
+
+.formulario p:hover {
+    color: var(--accent-300);
+}
+
+.formulario button:hover {
+    letter-spacing: 2px;
+    background-color: var(--primary-100);
+    color: var(--text-300);
+}
+

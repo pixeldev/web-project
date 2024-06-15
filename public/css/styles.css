@@ -69,6 +69,27 @@ a {
 /*------------------------------Estilos de la vista principal-------------------------------------*/
 
 /*-------------------Item1-------------------------*/
+#home-main {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    padding: 30px;
+}
+
+#home-main section {
+    max-width: 1440px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
 .item1 {
     /* border: #333333 2px solid; */
     margin: 50px 100px;
@@ -214,6 +235,7 @@ a {
 footer {
     background: var(--accent-200);
     height: 100px;
+
 
     display: flex;
     align-items: center;

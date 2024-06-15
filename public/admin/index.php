@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/index.css">
     <link rel="icon" type="image/x-icon" href="../images/favicon.ico"/>
     <title>Fugafix | Administración</title>
 </head>
@@ -56,7 +57,7 @@
                 <h2>Reporte de ingresos</h2>
                 <p>En esta sección podrás visualizar el reporte de ingresos hasta el momento.</p>
                 <button class="accent-button">
-                    <a href="report/index.php">Visualizar reporte</a>
+                    <a href="costs-report.php">Visualizar reporte</a>
                 </button>
             </div>
         </article>
