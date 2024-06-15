@@ -23,12 +23,12 @@
     text-align: center;
 }
 #flex-container > *{
+    width: 30%;
     margin: 20px 20px;
     background-color: var(--primary-300);
     border-radius: 50px;
     border: 2px solid var(--accent-200);
     padding: 100px;
-    
 }
 h3{
     font-weight: 400;
