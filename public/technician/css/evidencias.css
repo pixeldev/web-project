@@ -13,6 +13,7 @@
     width: 85%;
     margin: 20px auto;
     border-radius: 25px;
+    box-shadow:  15px 25px  45px var(--bg-300);
 }
 #flex-container {
     display: flex;
@@ -22,6 +23,7 @@
     text-align: center;
 }
 #flex-container > *{
+    width: 30%;
     margin: 20px 20px;
     background-color: var(--primary-300);
     border-radius: 50px;

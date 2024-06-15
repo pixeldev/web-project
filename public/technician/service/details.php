@@ -35,7 +35,11 @@
             </article>
             <article id="status-info">
                 <h2>ESTATUS</h2>
-                <p>En PROGRESO</p>
+                <select id="status-select">
+                    <option value="waiting">En espera</option>
+                    <option value="in-progress" >En progreso</option>
+                    <option value="finished">Finalizado</option>
+                </select>
             </article>
             <article id="send-evidence">
                 <h2>ENVIAR EVIDENCIA</h2>
