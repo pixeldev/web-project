@@ -20,6 +20,10 @@ button {
     border-color: var(--accent-100);
 }
 
+.color-accent-200 {
+    color: var(--accent-200);
+}
+
 button a {
     color: var(--text-300);
     text-decoration: none;

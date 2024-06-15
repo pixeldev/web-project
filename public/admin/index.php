@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="icon" type="image/x-icon" href="../images/favicon.ico"/>
-    <title>Fugafix | Administración</title>
+    <title>Fugafix Admin | Home</title>
 </head>
 <body>
 <header class="header">
@@ -42,7 +42,7 @@
                 <h2>Horas laboradas</h2>
                 <p>En esta sección podrá visualizar a los técnicos más productivos de la empresa.</p>
                 <button class="accent-button">
-                    <a href="technician/index.php">Visualizar técnicos</a>
+                    <a href="worked-hours.php">Visualizar técnicos</a>
                 </button>
             </div>
             <div id="admin-details-graph-hours">
