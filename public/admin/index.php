@@ -26,7 +26,7 @@
                 <h2>Material usado</h2>
                 <p>En esta sección podrá visualizar el material utilizado en los servicios.</p>
                 <button class="accent-button">
-                    <a href="service/used-material.php">Visualizar material usado</a>
+                    <a href="material-report.php">Visualizar material usado</a>
                 </button>
             </div>
             <div id="admin-details-storage">
