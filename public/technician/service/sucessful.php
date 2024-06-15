@@ -30,7 +30,7 @@
 
 </main>
 <footer>
-<p>2024 Fugafix. Todos los derechso reservados</p>
+<p>© 2024 Fugafix. Todos los derechos reservados.</p>
 </footer>
 </body>
 </html>

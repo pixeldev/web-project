@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="../../css/reset.css">
     <link rel="stylesheet" href="../../css/normalize.css">
     <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
     <link rel="icon" type="image/x-icon" href="../../images/favicon.ico"/>
     <title>Fugafix | Evidencia</title>
 </head>
@@ -18,21 +19,28 @@
     <a href="../account/account.html"><p>Cuenta</p></a>
 </header>
 <section>
-    <header>
+    <div id="Title">
         <h1>Visualizar Evidencia</h1>
-    </header>
+    </div>
     <div id="Evidencia">
-        <p>Nuestro tecnico ha finalizado el trabajo, este es el resultado</p>
-        <!-- <img></img> -->
-        <!-- <img></img> -->
-        <!-- <img></img> -->
+        <h2>Nuestro tecnico ha finalizado el trabajo, este es el resultado</h2>
+        <div id="imagesForFun">
+            <img src="./images/imagenPrueba.png" alt="imagenPrueba" id="imageOne">
+            <img src="./images/imagenPrueba.png" alt="imagenPrueba" id="imageTwo">
+            <img src="./images/imagenPrueba.png" alt="imagenPrueba" id="imageThree">
+        </div>
         <p>Toque para ampliar la foto</p>
     </div>
     <div id="Satisfaccion">
-        <p>¿Está satisfecho con el trabajo?</p>
-        <a href="payment.html"><p>Si, proceder al pago</p></a>
-        <p>No</p>
+        <h2>¿Está satisfecho con el trabajo?</h2>
+        <div id="yesButton">
+            <button><a href="payment.html"><p>Si, proceder al pago</p></a></button>
+            <button><a href="requests-status.html"><p>No</p></a></button>
+        </div>
     </div>
 </section>
+<footer>
+    <p>© 2024 FugaFix. Todos los derechos reservados.</p>
+</footer>
 </body>
 </html>

@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="../../css/reset.css">
     <link rel="stylesheet" href="../../css/normalize.css">
     <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
     <link rel="icon" type="image/x-icon" href="../../images/favicon.ico"/>
     <title>Fugafix | Solicitar servicio</title>
 </head>
@@ -18,36 +19,93 @@
     <a href="../account/account.html"><p>Cuenta</p></a>
 </header>
 <section>
-    <header>
+    <div id="Title">
         <h1>Formulario para solicitar servicios</h1>
-    </header>
+    </div>
     <div id="InformacionContacto">
         <h2>Información de contacto de quien recibirá el servicio</h2>
-        <p>Nombre(s):</p>
-        <p>Apellido Paterno:</p>
-        <p>Apellido Materno:</p>
-        <p>Calle:</p>
-        <p>Colonia:</p>
-        <p>Número Interior:</p>
-        <p>Número Exterior:</p>
-        <p>Alcaldia:</p>
-        <p>Telefono:</p>
+        <div id="ContenedorContacto">
+                <div id="ContenedorNombresNombre">
+                    <label for="Nombre">Nombre(s):</label>
+                    <input type="text" id="Nombre" name="Nombre" required>
+                </div>
+                <div id="ContenedorNombresApellidoPaterno">
+                    <label for="ApellidoPaterno">Apellido Paterno:</label>
+                    <input type="text" id="ApellidoPaterno" name="ApellidoPaterno" required>
+                </div>
+                <div id="ContenedorNombresApellidoMaterno">
+                    <label for="ApellidoMaterno">Apellido Materno:</label>
+                    <input type="text" id="ApellidoMaterno" name="ApellidoMaterno" required>
+                </div>
+                <div id="ContenedorDireccionCalle">
+                    <label for="Calle">Calle:</label>
+                    <input type="text" id="Calle" name="Calle" required>
+                </div>
+                <div id="ContenedorDireccionColonia">
+                    <label for="Colonia">Colonia:</label>
+                    <input type="text" id="Colonia" name="Colonia" required>
+                </div>
+                <div ID="ContenedorDireccionNumeroInterior">
+                    <label for="NumeroInterior">Número Interior:</label>
+                    <input type="text" id="NumeroInterior" name="NumeroInterior" required>
+                </div>
+                <div id="ContenedorTelefonoNumeroExterior">
+                    <label for="NumeroExterior">Número Exterior:</label>
+                    <input type="text" id="NumeroExterior" name="NumeroExterior" required>
+                </div>
+                <div id="ContenedorTelefonoAlcaldia">
+                    <label for="Alcaldia">Alcaldia:</label>
+                    <input type="text" id="Alcaldia" name="Alcaldia" required>
+                </div>
+                <div id="ContenedorTelefonoTelefono">
+                    <label for="Telefono">Teléfono:</label>
+                    <input type="text" id="Telefono" name="Telefono" required>
+                </div>
+        </div>
     </div>
     <div id="InformacionServicio">
         <h2>¿Qué tipo de servicio necesita?</h2>
-        <p>Limpieza de tinaco ($0.00 MXN)</p>
-        <p>Cambio de filtro ($0.00 MXN)</p>
-        <p>Reparación de fuga ($0.00 MXN)</p>
+        <div id="ContenedorOpciones">
+            <form>
+                <input type="checkbox" id="LimpiezaTinaco" name="LimpiezaTinaco" value="LimpiezaTinaco">
+                <label for="LimpiezaTinaco">Limpieza de tinaco ($00.00 MXN)</label>
+                <input type="checkbox" id="CambioFiltro" name="CambioFiltro" value="CambioFiltro">
+                <label for="CambioFiltro">Cambio de filtro ($00.00 MXN)</label>
+                <input type="checkbox" id="ReparacionFuga" name="ReparacionFuga" value="ReparacionFuga">
+                <label for="ReparacionFuga">Reparación de fuga ($00.00 MXN)</label>
+            </form>
+        </div>
     </div>
     <div id="InformacionFecha">
         <h2>¿Cuándo necesita el servicio?</h2>
-        <p>Fecha:</p>
-        <p>Hora:</p>
+        <div id="ContenedorFechas">
+            <div id="FechaYFormulario">
+                <form>
+                    <label for="Fecha">Fecha:</label>
+                    <input type="date" id="Fecha" name="Fecha" required><br><br>
+                    <label for="Hora">Hora:</label>
+                    <input type="time" id="Hora" name="Hora" required>
+                </form>
+            </div>
+        </div>
     </div>
     <div id="DescripcionProblema">
-        <h2>Agregue información adicional sobre el problema</h2>
+            <h2>Describa el problema</h2>
+            <div id="DescripcionProblemas">
+                <form>
+                    <label for="Descripcion"></label>
+                    <textarea id="Descripcion" name="Descripcion" rows="7" cols="75" required></textarea>
+                </form>
+            </div>
+    </div>
+    <div id="BotonSolicitar">
+        <button>
+            <a href="requests-status.html"><p>Solicitar</p></a>
+        </button>
     </div>
 </section>
+<footer>
+    <p>© 2024 FugaFix. Todos los derechos reservados.</p>
+</footer>
 </body>
-
 </html>

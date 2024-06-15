@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="../../css/reset.css">
     <link rel="stylesheet" href="../../css/normalize.css">
     <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
     <link rel="icon" type="image/x-icon" href="../../images/favicon.ico"/>
     <title>Fugafix | Pago</title>
 </head>
@@ -18,42 +19,52 @@
     <a href="../account/account.html"><p>Cuenta</p></a>
 </header>
 <section>
-    <header>
+    <div id="Title">
         <h1>Realizar Pago</h1>
-    </header>
-    <!--<form action="pago.php" method="post">
-        <label for="nombre">Nombre del titular de la tarjeta</label>
-        <input type="text" name="nombre" id="nombre" required>
-        <label for="numero">Número de tarjeta</label>
-        <input type="text" name="numero" id="numero" required>
-        <label for="fecha">Fecha de expiración</label>
-        <input type="text" name="fecha" id="fecha" required>
-        <label for="cvv">CVV</label>
-        <input type="text" name="cvv" id="cvv" required>
-        <input type="submit" value="Pagar">
-    </form>-->
+    </div>
     <div id="PagoConTarjeta">
         <h2>Tarjetas de crédito o débito aceptadas</h2>
         <div id="ImagenesTarjetas">
-            <img src="./imagenes/visa.png" alt="Visa">
-            <img src="./imagenes/mastercard.png" alt="Mastercard">
-            <img src="./imagenes/americanexpress.png" alt="American Express">
+            <img src="./images/visa.png" alt="Visa">
+            <img src="./images/masterCard.png" alt="Mastercard">
+            <img src="./images/americanExpress.png" alt="American Express">
         </div>
-        <div id="DatosTarjetayTitular">
-            <p>Nombre del titular</p>
-            <p>Numero de Tarjeta</p>
-        </div>
-        <div id="DatosConfidenciales">
-            <div id="FechaExpiracion">
-                <p>Fecha de expiración</p>
-                <div id="MesAnio">
-                    <p>Mes</p>
-                    <p>Año</p>
+        <div id="ContenedorTarjeta">
+            <form>
+                <div id="contentCardInfo">
+                    <div id="cardOwner">
+                        <label for="NombreTitular">Nombre del titular</label>
+                        <input type="text" id="NombreTitular" name="NombreTitular" required>
+                    </div>
+                    <div id="cardNumber">
+                        <label for="NumeroTarjeta">Número de tarjeta</label>
+                        <input type="text" id="NumeroTarjeta" name="NumeroTarjeta" required>
+                    </div>
+                    <div id="cardDate">
+                        <label for="Mes">Fecha de expiración</label>
+                        <label for="Anio"></label>
+                        <div id="MesAnio">
+                            <input type="text" id="Mes" name="Mes" required>
+                            <input type="text" id="Anio" name="Anio" required>
+                        </div>
+                    </div>
+                    <div id="cardCVV">
+                        <label for="CVV">CVV</label><p>
+
+                    </p>
+                        <input type="text" id="CVV" name="CVV" required>
+                    </div>
                 </div>
-            </div>
-            <p>CVV</p>
+                <div id="contentButton">
+                    <button type="submit">Pagar</button>
+                </div>
+            </form>
         </div>
+
     </div>
 </section>
+<footer>
+    <p>© 2024 FugaFix. Todos los derechos reservados.</p>
+</footer>
 </body>
 </html>

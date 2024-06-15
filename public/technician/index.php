@@ -20,30 +20,28 @@
 </header>
 <main>
     <section class="technician-welcome">
-        <article class="technician-name">
-            <h2>Hola De nuevo XXXXXXX</h2>
-        </article>
+            <h2>Hola de nuevo Tecnico Javier</h2>   
     </section>
     <div id="flex-container">
         <section class="list-services">
             <div class="title">
-                <h3>SERVICIOS DE HOY</h3>
+                <h2>SERVICIOS DE HOY</h2>
             </div>
             <h4>Presione para ver mas detalles del servicio</h4>
             <article id="no.servicio">
-                <a href="service/details.php"><p>Limpieza de Tinaco</p></a>
+                <a href="service/details.php"><p>Reparacion de Fuga de Agua</p></a>
             </article>
             <article id="no.servicio">
-                <p>Reparacion de Fuga de Gas</p>
+                <p>Mantenimiento y Lavado de Tinacos</p>
             </article>
             <article id="no.servicio">
-                <p>Fuga de Agua</p>
+                <p>Instalacion de calentador de Agua</p>
             </article>
 
         </section>
         <section class="list-material">
             <div class="title">
-                <h3>MATERIAL DISPONIBLE</h3>
+                <h2>MATERIAL DISPONIBLE</h2>
             </div>
             <article id="material">
                 <p>MATERIAL 1</p>
@@ -66,7 +64,7 @@
 
 </main>
 <footer>
-
+<p>2024 Fugafix. Todos los derechso reservados</p> 
 </footer>
 
 

@@ -15,29 +15,30 @@
 <header class="header">
     <img class="logo-navbar" src="../../images/imagotipo-500x500.svg" alt="Fugafix Imagotipo">
     <button class="blue-button">
-        <a href="../index.php">MENU PRINCIPAL</a>
+        <a href="../index.php">Regresar al Menu Principal</a>
     </button>
 </header>
 <main>
     <section class="title-view">
         <article class="type-service">
-            <h2>SERVICIO 1.- Limpieza de tinaco</h2>
+            <h1>SERVICIO: Reparacion de Fuga de Agua</h1>
         </article>
     </section>
     <div id="flex-container">
         <section class="service-description">
+            
             <article id="client-info">
-                <h3>INFORMACION DEL CLIENTE</h3>
+            <h2>INFORMACION DEL CLIENTE</h2>
                 <p>Nombre del Cliente: ERICK MOSSO LINAREZ</p>
                 <p>Direccion: AV. 5 de mayo 350</p>
                 <p>Telefono de contacto: 554856987 </p>
             </article>
             <article id="status-info">
-                <h3>ESTATUS</h3>
+                <h2>ESTATUS</h2>
                 <p>En PROGRESO</p>
             </article>
             <article id="send-evidence">
-                <h3>ENVIAR EVIDENCIA</h3>
+                <h2>ENVIAR EVIDENCIA</h2>
                 <button class="yellow-button" id="button-send-evidence">
                     <a href="evidences.php"><p>Presione para enviar imagenes del servicio </p></a>
                 </button>
@@ -46,26 +47,26 @@
         </section>
         <section class="material-necesary">
             <div class="title">
-                <h3>MATERIAL NECESARIO</h3>
+                <h2>MATERIAL NECESARIO</h2>
             </div>
             <article id="material">
-                <p>MATERIAL 1</p>
+                <p>3 metros de Tubo de cobre</p>
             </article>
             <article id="material">
-                <p>MATERIAL 2</p>
+                <p>5 codos de 1/2 pulgada</p>
             </article>
             <article id="material">
-                <p>MATERIAL 3</p>
+                <p>2 metros de soldadura</p>
             </article>
             <article id="material">
-                <p>MATERIAL 4</p>
+                <p>1 tubo de gas butano de 1/2 litro</p>
             </article>
         </section>
     </div>
 
 </main>
 <footer>
-
+<p>© 2024 Fugafix. Todos los derechos reservados.</p>
 </footer>
 </body>
 </html>

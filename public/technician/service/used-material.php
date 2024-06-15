@@ -53,7 +53,7 @@
 
 </main>
 <footer>
-
+<p>2024 Fugafix. Todos los derechso reservados</p>
 </footer>
 </body>
 </html>
