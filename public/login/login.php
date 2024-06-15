@@ -14,7 +14,7 @@
 <header class="header">
     <img class="logo-navbar" src="../images/imagotipo-500x500.svg" alt="FugaFix Imagotipo">
     <div class="menu">
-        <a href="../signUp/signup.php"><p>Regístrate</p></a>
+        <a href="../signup/signup.php"><p>Regístrate</p></a>
     </div>
 </header>
 
