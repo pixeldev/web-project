@@ -33,7 +33,7 @@
                 <h2>Almacén</h2>
                 <p>En esta sección podrá revisar y registrar el material disponible en el almacén.</p>
                 <button class="accent-button">
-                    <a href="storage/index.php">Inspeccionar almacén</a>
+                    <a href="storage.php">Inspeccionar almacén</a>
                 </button>
             </div>
         </article>
