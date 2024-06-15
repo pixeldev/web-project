@@ -21,7 +21,7 @@
 <main>
     <section class="title-view">
         <article class="name-service">
-            <h2>EVIDENCIAS</h2>
+            <h2>ENVIO DE EVIDENCIAS</h2>
         </article>
     </section>
     <section class="evidence-container">

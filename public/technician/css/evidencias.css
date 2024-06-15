@@ -13,6 +13,7 @@
     width: 85%;
     margin: 20px auto;
     border-radius: 25px;
+    box-shadow:  15px 25px  45px var(--bg-300);
 }
 #flex-container {
     display: flex;
@@ -27,6 +28,7 @@
     border-radius: 50px;
     border: 2px solid var(--accent-200);
     padding: 100px;
+    
 }
 h3{
     font-weight: 400;

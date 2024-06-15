@@ -39,8 +39,12 @@ main > div {
 
 /* contenedro donde se mostraran los servicios del dia para el tecnico */
 .list-services {
-    width: 45%;
+    width: 75%;
     text-align: center;
+    margin: 0px auto;
+    box-shadow:  15px 25px  45px var(--bg-300);
+    border-radius: 25px;
+    padding: 23px;
 }
 
 .list-services > article {
@@ -51,7 +55,7 @@ main > div {
     margin: 10px auto;
 }
 
-/* contendro donde se mostrar el materia lqeu el tecnico cuenta en almacemn */
+/* contendro donde se mostrar el materia lqeu el tecnico cuenta en almacemn
 .list-material {
     width: 45%;
     text-align: center;
@@ -61,5 +65,5 @@ main > div {
     border: var(--accent-200) 2px solid;
     border-radius: 20px;
     margin: 20px 20px;
-}
+} */
 
