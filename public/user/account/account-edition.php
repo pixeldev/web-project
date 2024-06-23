@@ -24,7 +24,7 @@
     </div>
     <div id="accountInformation">
         <h2>Información de la cuenta</h2>
-        <form name="modificationAccount" action="account.html" enctype="multipart/form-data" method="post">
+        <form name="modificationAccount" action="account.php" enctype="multipart/form-data" method="post">
         <div id="InformationUser">
             <label for="nombre">Nombre(s):</label>
             <input type="text" id="nombre" name="nombre" value="PedroPe"><br><br>
@@ -47,7 +47,24 @@
             <label for="NumeroExterior">Número Exterior:</label>
             <input type="text" id="NumeroExterior" name="NumeroExterior" value="1"><br><br>
             <label for="Alcaldia">Alcaldia:</label>
-            <input type="text" id="Alcaldia" name="Alcaldia" value="Alcaldia 1" ><br><br>
+            <select id="alcaldias" name="alcaldias">
+                <option value="alvaro-obregon">Álvaro Obregón</option>
+                <option value="azcapotzalco">Azcapotzalco</option>
+                <option value="benito-juarez">Benito Juárez</option>
+                <option value="coyoacan">Coyoacán</option>
+                <option value="cuajimalpa-de-morelos">Cuajimalpa de Morelos</option>
+                <option value="cuauhtemoc">Cuauhtémoc</option>
+                <option value="gustavo-a-madero">Gustavo A. Madero</option>
+                <option value="iztacalco">Iztacalco</option>
+                <option value="iztapalapa">Iztapalapa</option>
+                <option value="la-magdalena-contreras">La Magdalena Contreras</option>
+                <option value="miguel-hidalgo">Miguel Hidalgo</option>
+                <option value="milpa-alta">Milpa Alta</option>
+                <option value="tlahuac">Tláhuac</option>
+                <option value="tlalpan">Tlalpan</option>
+                <option value="venustiano-carranza">Venustiano Carranza</option>
+                <option value="xochimilco">Xochimilco</option>
+            </select><br><br>
             <label for="CodigoPostal">Código Postal:</label>
             <input type="text" id="CodigoPostal" name="CodigoPostal" value="12345" ><br><br>
         </div>
