@@ -9,21 +9,7 @@
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="icon" type="image/x-icon" href="../../images/favicon.ico"/>
     <title>Fugafix | Estado de solicitudes</title>
-</head>
-<body>
-<header class="header">
-    <img class="logo-navbar" src="../../images/imagotipo-500x500.svg" alt="Fugafix Imagotipo">
-    <a href="../index.php"><p>Inicio</p></a>
-    <a href="request-service.html"><p>Hacer Solicitud</p></a>
-    <a href="requests-status.html"><p>Estado de las solicitudes</p></a>
-    <a href="../account/account.html"><p>Cuenta</p></a>
-</header>
-<section>
-    <div id="Title">
-        <h1>Visualizar Estado de las solicitudes</h1>
-    </div>
-    <div id="BoxTable">
-        <table>
+    <?php $EncabezadoTabla = "<table>
             <thead>
             <tr>
                 <th>Num. Pedido</th>
@@ -34,16 +20,33 @@
                 <th>Monto</th>
                 <th>Visualizar Evidencia</th>
             </tr>
-            </thead>
+            </thead>"; ?>
+</head>
+<body>
+<header class="header">
+    <img class="logo-navbar" src="../../images/imagotipo-500x500.svg" alt="Fugafix Imagotipo">
+    <a href="../index.php"><p>Inicio</p></a>
+    <a href="request-service.php"><p>Hacer Solicitud</p></a>
+    <a href="requests-status.html"><p>Estado de las solicitudes</p></a>
+    <a href="../account/account.html"><p>Cuenta</p></a>
+</header>
+<section>
+    <div id="Title">
+        <h1>Visualizar Estado de las solicitudes</h1>
+    </div>
+    <div id="BoxTable">
+        <?php
+        echo $EncabezadoTabla;
+        ?>
             <tbody>
             <tr>
-                <td>Something</td>
-                <td>Something</td>
-                <td>Something</td>
-                <td>Something</td>
-                <td>Something</td>
-                <td>Something</td>
-                <td><a href="evidences.html">Visualizar Evidencia</a></td>
+                <td><p>Something<p></td>
+                <td><p>Something<p></td>
+                <td><p>Something<p></td>
+                <td><p>Something<p></td>
+                <td><p>Something<p></td>
+                <td><p>Something<p></td>
+                <td><a href="evidences.html">Visualizar</a></td>
             </tr>
             <tr>
                 <td>Something</td>
@@ -52,7 +55,7 @@
                 <td>Something</td>
                 <td>Something</td>
                 <td>Something</td>
-                <td><a href="evidences.html">Visualizar Evidencia</a></td>
+                <td><a href="evidences.html">Visualizar</a></td>
             </tr>
             </tbody>
         </table>

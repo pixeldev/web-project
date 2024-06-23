@@ -14,8 +14,8 @@
 <header class="header">
     <img class="logo-navbar" src="../../images/imagotipo-500x500.svg" alt="Fugafix Imagotipo">
     <a href="../index.php"><p>Inicio</p></a>
-    <a href="request-service.html"><p>Hacer Solicitud</p></a>
-    <a href="requests-status.html"><p>Estado de las solicitudes</p></a>
+    <a href="request-service.php"><p>Hacer Solicitud</p></a>
+    <a href="requests-status.php"><p>Estado de las solicitudes</p></a>
     <a href="../account/account.html"><p>Cuenta</p></a>
 </header>
 <section>
@@ -23,6 +23,7 @@
         <h1>Formulario para solicitar servicios</h1>
     </div>
     <div id="InformacionContacto">
+        <form action="request-service.php" method="post">
         <h2>Información de contacto de quien recibirá el servicio</h2>
         <div id="ContenedorContacto">
                 <div id="ContenedorNombresNombre">
@@ -54,8 +55,25 @@
                     <input type="text" id="NumeroExterior" name="NumeroExterior" required>
                 </div>
                 <div id="ContenedorTelefonoAlcaldia">
-                    <label for="Alcaldia">Alcaldia:</label>
-                    <input type="text" id="Alcaldia" name="Alcaldia" required>
+                     <label for="alcaldias">Alcaldía:</label>
+                        <select id="alcaldias" name="alcaldias">
+                            <option value="alvaro-obregon">Álvaro Obregón</option>
+                            <option value="azcapotzalco">Azcapotzalco</option>
+                            <option value="benito-juarez">Benito Juárez</option>
+                            <option value="coyoacan">Coyoacán</option>
+                            <option value="cuajimalpa-de-morelos">Cuajimalpa de Morelos</option>
+                            <option value="cuauhtemoc">Cuauhtémoc</option>
+                            <option value="gustavo-a-madero">Gustavo A. Madero</option>
+                            <option value="iztacalco">Iztacalco</option>
+                            <option value="iztapalapa">Iztapalapa</option>
+                            <option value="la-magdalena-contreras">La Magdalena Contreras</option>
+                            <option value="miguel-hidalgo">Miguel Hidalgo</option>
+                            <option value="milpa-alta">Milpa Alta</option>
+                            <option value="tlahuac">Tláhuac</option>
+                            <option value="tlalpan">Tlalpan</option>
+                            <option value="venustiano-carranza">Venustiano Carranza</option>
+                            <option value="xochimilco">Xochimilco</option>
+                        </select>
                 </div>
                 <div id="ContenedorTelefonoTelefono">
                     <label for="Telefono">Teléfono:</label>
@@ -66,43 +84,36 @@
     <div id="InformacionServicio">
         <h2>¿Qué tipo de servicio necesita?</h2>
         <div id="ContenedorOpciones">
-            <form>
-                <input type="checkbox" id="LimpiezaTinaco" name="LimpiezaTinaco" value="LimpiezaTinaco">
-                <label for="LimpiezaTinaco">Limpieza de tinaco ($00.00 MXN)</label>
-                <input type="checkbox" id="CambioFiltro" name="CambioFiltro" value="CambioFiltro">
-                <label for="CambioFiltro">Cambio de filtro ($00.00 MXN)</label>
-                <input type="checkbox" id="ReparacionFuga" name="ReparacionFuga" value="ReparacionFuga">
-                <label for="ReparacionFuga">Reparación de fuga ($00.00 MXN)</label>
-            </form>
+               <input type="radio" id="LimpiezaTinaco" name="tipoServicio" value="LimpiezaTinaco">
+               <label for="LimpiezaTinaco">Limpieza de tinaco ($00.00 MXN)</label><br>
+               <input type="radio" id="CambioFiltro" name="tipoServicio" value="CambioFiltro">
+               <label for="CambioFiltro">Cambio de filtro ($00.00 MXN)</label><br>
+               <input type="radio" id="ReparacionFuga" name="tipoServicio" value="ReparacionFuga">
+               <label for="ReparacionFuga">Reparación de fuga ($00.00 MXN)</label>
         </div>
     </div>
     <div id="InformacionFecha">
         <h2>¿Cuándo necesita el servicio?</h2>
         <div id="ContenedorFechas">
             <div id="FechaYFormulario">
-                <form>
                     <label for="Fecha">Fecha:</label>
                     <input type="date" id="Fecha" name="Fecha" required><br><br>
                     <label for="Hora">Hora:</label>
                     <input type="time" id="Hora" name="Hora" required>
-                </form>
             </div>
         </div>
     </div>
     <div id="DescripcionProblema">
             <h2>Describa el problema</h2>
             <div id="DescripcionProblemas">
-                <form>
                     <label for="Descripcion"></label>
                     <textarea id="Descripcion" name="Descripcion" rows="7" cols="75" required></textarea>
-                </form>
             </div>
     </div>
     <div id="BotonSolicitar">
-        <button>
-            <a href="requests-status.html"><p>Solicitar</p></a>
-        </button>
+        <button type="submit"><p>Solicitar</p></button>
     </div>
+    </form>
 </section>
 <footer>
     <p>© 2024 FugaFix. Todos los derechos reservados.</p>

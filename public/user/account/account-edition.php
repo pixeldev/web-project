@@ -14,8 +14,8 @@
 <header class="header">
     <img class="logo-navbar" src="../../images/imagotipo-500x500.svg" alt="Fugafix Imagotipo">
     <a href="../index.php"><p>Inicio</p></a>
-    <a href="../service/request-service.html"><p>Hacer Solicitud</p></a>
-    <a href="../service/requests-status.html"><p>Estado de las solicitudes</p></a>
+    <a href="../service/request-service.php"><p>Hacer Solicitud</p></a>
+    <a href="../service/requests-status.php"><p>Estado de las solicitudes</p></a>
     <a href="account.html"><p>Cuenta</p></a>
 </header>
 <section>
@@ -24,75 +24,44 @@
     </div>
     <div id="accountInformation">
         <h2>Información de la cuenta</h2>
+        <form name="modificationAccount" action="account.html" enctype="multipart/form-data" method="post">
         <div id="InformationUser">
             <label for="nombre">Nombre(s):</label>
-            <input type="text" id="nombre" name="nombre" value="PedroPe" 
-
-
-
-
-><br><br>
+            <input type="text" id="nombre" name="nombre" value="PedroPe"><br><br>
             <label for="apellidoPaterno">Apellido Paterno:</label>
-            <input type="text" id="apellidoPaterno" name="apellidoPaterno" value="Perez" 
-
-
-
-
-><br><br>
+            <input type="text" id="apellidoPaterno" name="apellidoPaterno" value="Perez"><br><br>
             <label for="apellidoMaterno">Apellido Materno:</label>
-            <input type="text" id="apellidoMaterno" name="apellidoMaterno" value="Perez" 
-
-
-
-
-><br><br>
+            <input type="text" id="apellidoMaterno" name="apellidoMaterno" value="Perez"><br><br>
             <label for="CorreoElectronico">Correo Electrónico:</label>
-            <input type="text" id="CorreoElectronico" name="CorreoElectronico" value="pedrope@hotmail.com" 
-
-><br><br>
+            <input type="text" id="CorreoElectronico" name="CorreoElectronico" value="pedrope@hotmail.com" ><br><br>
         </div>
         <h3>Direccion Asociada</h3>
         <br>
         <div id="InformationAddress">
             <label for="Calle">Calle:</label>
-            <input type="text" id="Calle" name="Calle" value="Calle 1" 
-
-><br><br>
+            <input type="text" id="Calle" name="Calle" value="Calle 1"><br><br>
             <label for="Colonia">Colonia:</label>
-            <input type="text" id="Colonia" name="Colonia" value="Colonia 1" 
-
-><br><br>
+            <input type="text" id="Colonia" name="Colonia" value="Colonia 1"><br><br>
             <label for="NumeroInterior">Número Interior:</label>
-            <input type="text" id="NumeroInterior" name="NumeroInterior" value="1" 
-
-><br><br>
+            <input type="text" id="NumeroInterior" name="NumeroInterior" value="1"><br><br>
             <label for="NumeroExterior">Número Exterior:</label>
-            <input type="text" id="NumeroExterior" name="NumeroExterior" value="1" 
-
-><br><br>
+            <input type="text" id="NumeroExterior" name="NumeroExterior" value="1"><br><br>
             <label for="Alcaldia">Alcaldia:</label>
-            <input type="text" id="Alcaldia" name="Alcaldia" value="Alcaldia 1" 
-
-><br><br>
+            <input type="text" id="Alcaldia" name="Alcaldia" value="Alcaldia 1" ><br><br>
             <label for="CodigoPostal">Código Postal:</label>
-            <input type="text" id="CodigoPostal" name="CodigoPostal" value="12345" 
-
-><br><br>
+            <input type="text" id="CodigoPostal" name="CodigoPostal" value="12345" ><br><br>
         </div>
         <h3>Medios de Contacto</h3><br>
         <div id="InformationContact">
             <label for="Telefono">Telefono:</label>
-            <input type="text" id="Telefono" name="Telefono" value="1234567890" 
-
-><br><br>
+            <input type="text" id="Telefono" name="Telefono" value="1234567890"><br><br>
             <label for="Contrasena">Contraseña:</label>
             <input type="password" id="Contrasena" name="Contrasena" value="1234567890" ><br><br>
         </div>
     </div>
     <div id="SaveButton">
-        <button id="SaveDataButton">
-            <a href="account.html"><p>Guardar Cambios</p></a>
-            </button>
+        <button type="submit">Guardar Cambios</button>
+        </form>
     </div>
 </section>
 <footer>

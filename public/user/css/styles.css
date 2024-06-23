@@ -8,6 +8,12 @@
     position: relative;
     top: 10px;
 }
+a{
+    color: var(--text-300);
+    background-color: var(--primary-100);
+    padding: 10px;
+    margin: 10px;
+}
 
 section > :not(:first-child) {
     background-color: var(--bg-200);
@@ -27,6 +33,8 @@ h2{
     font-size: 1.5em;
     margin-bottom: 20px;
     text-align: left;
+    width: 100%;
+    padding-top: 10px;
 }
 h3{
     font-weight: bold;
@@ -50,8 +58,9 @@ div[id*="ContenedorNombres"],div[id*="ContenedorDireccion"],div[id*="ContenedorT
 textarea[id*=Descripci]{
     background-color: var(--primary-300);
     border-radius: 10px;
+    width: 90%;
 }
-input{
+input,select{
     background-color: var(--primary-300);
     border-color: transparent;
     border-radius: 10px;
@@ -59,9 +68,6 @@ input{
     padding: 5px;
 }
 form{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
     width: 90%;
 }
 div[id*="Information"]{
@@ -76,6 +82,11 @@ table{
 tr,td,th{
     border: 1px solid var(--text-100);
     text-align: center;
+    height: 100px;
+}
+td a{
+    position: relative;
+    top: 30px;
 }
 th{
     background-color: var(--primary-100);
@@ -120,7 +131,8 @@ img{
     width: 80%;
 }
 #DescripcionProblemas{
-    margin-left: 10%;
+    width: 100%;
+    text-align: center;
 }
 
 #ContenedorContacto{

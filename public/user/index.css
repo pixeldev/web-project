@@ -8,7 +8,12 @@
 
     padding: 30px;
 }
-
+a{
+    color: var(--text-300);
+    background-color: var(--primary-100);
+    padding: 3px 20px;
+    margin: 10px;
+}
 #user-index-main section {
     max-width: 1000px;
 
