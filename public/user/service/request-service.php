@@ -85,11 +85,11 @@
         <h2>¿Qué tipo de servicio necesita?</h2>
         <div id="ContenedorOpciones">
                <input type="radio" id="LimpiezaTinaco" name="tipoServicio" value="LimpiezaTinaco">
-               <label for="LimpiezaTinaco">Limpieza de tinaco ($00.00 MXN)</label><br>
+               <label for="LimpiezaTinaco">Limpieza de tinaco ($1200.00 MXN)</label><br>
                <input type="radio" id="CambioFiltro" name="tipoServicio" value="CambioFiltro">
-               <label for="CambioFiltro">Cambio de filtro ($00.00 MXN)</label><br>
+               <label for="CambioFiltro">Cambio de filtro ($1100.00 MXN)</label><br>
                <input type="radio" id="ReparacionFuga" name="tipoServicio" value="ReparacionFuga">
-               <label for="ReparacionFuga">Reparación de fuga ($00.00 MXN)</label>
+               <label for="ReparacionFuga">Reparación de fuga ($1500.00 MXN)</label>
         </div>
     </div>
     <div id="InformacionFecha">
