@@ -39,7 +39,7 @@ router.post('/', (req, res) => {
                                 return;
                             }
                             client.query(
-                                'INSERT INTO usuario (id_persona) VALUES ($1)',
+                                'INSERT INTO usuario (id) VALUES ($1)',
                                 [result.rows[0].id],
                                 (err) => {
                                     if (err) {

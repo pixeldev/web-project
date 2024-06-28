@@ -32,6 +32,13 @@ function handleSignupButton() {
         return;
     }
 
+    const email = form.elements['email'].value;
+
+    if (!email.includes('@')) {
+        alert('El email no es válido.');
+        return;
+    }
+
     const formData = new FormData(form);
     const data = {};
     formData.forEach((value, key) => {

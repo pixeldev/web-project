@@ -17,6 +17,15 @@ window.onload = function() {
         });
 }
 
+document.addEventListener('DOMContentLoaded', (event) => {
+    const date = new Date();
+    const dateString = date.toISOString().substring(0,10);
+    const timeString = date.toTimeString().substring(0,5);
+
+    document.getElementById('date').min = dateString;
+    document.getElementById('hour').min = timeString;
+});
+
 function handleRequest() {
     event.preventDefault();
 
@@ -28,8 +37,6 @@ function handleRequest() {
         return;
     }
 
-    // we need to post the data to the server
-    // we need to get the data from the form
     const form = document.querySelector('form');
 
     const formData = new FormData(form);

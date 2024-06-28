@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../css/reset.css">
+    <link rel="stylesheet" href="../../../css/normalize.css">
+    <link rel="stylesheet" href="../../../css/styles.css">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="icon" type="image/x-icon" href="../../../images/favicon.ico"/>
+    <title>Fugafix | Cuenta</title>
+</head>
+<body>
+<script src="../index.js"></script>
+<script src="index.js"></script>
+<header class="header">
+    <img class="logo-navbar" src="../../../images/imagotipo-500x500.svg" alt="Fugafix Imagotipo">
+    <a href="../"><p>Inicio</p></a>
+    <a href="../service/request"><p>Hacer Solicitud</p></a>
+    <button type=button onclick="goToRequestStatus()">Estado de solicitud</button>
+    <a href="index.html"><p>Cuenta</p></a>
+</header>
+<section>
+    <div id="Title">
+        <h1>Información de la cuenta</h1>
+    </div>
+    <div id="accountInformation">
+        <form action="" onsubmit="handleSaveChanges()">
+            <h2>Información de la cuenta</h2>
+            <div id="InformationUser">
+                <label for="user-name">Nombre(s):</label>
+                <input type="text" id="user-name" name="nombre" value="PedroPe"><br><br>
+                <label for="user-lastname">Apellido Paterno:</label>
+                <input type="text" id="user-lastname" name="apellidoPaterno" value="Perez"><br><br>
+                <label for="user-second-lastname">Apellido Materno:</label>
+                <input type="text" id="user-second-lastname" name="apellidoMaterno" value="Perez"><br><br>
+                <label for="user-email">Correo Electrónico:</label>
+                <input type="text" id="user-email" name="CorreoElectronico" value="pedrope@hotmail.com"><br><br>
+            </div>
+            <h3>Direccion Asociada</h3>
+            <br>
+            <div id="InformationAddress">
+                <label for="address-address">Calle:</label>
+                <input type="text" id="address-address" name="Calle" value="Calle 1"><br><br>
+                <label for="address-suburb">Colonia:</label>
+                <input type="text" id="address-suburb" name="Colonia" value="Colonia 1"><br><br>
+                <label for="address-int-number">Número Interior:</label>
+                <input type="text" id="address-int-number" name="NumeroInterior" value="1"><br><br>
+                <label for="address-ext-number">Número Exterior:</label>
+                <input type="text" id="address-ext-number" name="NumeroExterior" value="1"><br><br>
+                <label for="address-city-hall">Alcaldia:</label>
+                <select id="address-city-hall" name="Alcaldia">
+                </select>
+                <label for="address-postal-code">Código Postal:</label>
+                <input type="text" id="address-postal-code" name="CodigoPostal" value="12345"><br><br>
+            </div>
+            <h3>Medios de Contacto</h3><br>
+            <div id="InformationContact">
+                <label for="user-phone">Telefono:</label>
+                <input type="text" id="user-phone" name="Telefono" value="1234567890"><br><br>
+            </div>
+            <div id="editionButtons">
+                <button type="submit">Guardar cambios</button>
+            </div>
+        </form>
+    </div>
+</section>
+<footer>
+    <p>© 2024 FugaFix. Todos los derechos reservados.</p>
+</footer>
+</body>
+</html>

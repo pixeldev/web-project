@@ -55,11 +55,10 @@ CREATE TABLE IF NOT EXISTS persona
 
 CREATE TABLE IF NOT EXISTS usuario
 (
-    id                    SERIAL PRIMARY KEY,
-    id_persona            INT     NOT NULL,
+    id                    INT PRIMARY KEY,
     servicios_solicitados INT     NOT NULL DEFAULT 0,
     servicio_activo       BOOLEAN NOT NULL DEFAULT FALSE,
-    FOREIGN KEY (id_persona) REFERENCES persona (id)
+    FOREIGN KEY (id) REFERENCES persona (id)
 );
 
 CREATE TABLE IF NOT EXISTS tipo_servicio
