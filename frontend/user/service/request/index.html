@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../css/reset.css">
+    <link rel="stylesheet" href="../../../css/normalize.css">
+    <link rel="stylesheet" href="../../../css/styles.css">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="icon" type="image/x-icon" href="../../../images/favicon.ico"/>
+    <title>Fugafix | Solicitar servicio</title>
+</head>
+<body>
+<script src="index.js"></script>
+
+<header class="header">
+    <img class="logo-navbar" src="../../../images/imagotipo-500x500.svg" alt="Fugafix Imagotipo">
+    <a href="../../index.html"><p>Inicio</p></a>
+    <a href="../requests-status.html"><p>Estado de las solicitudes</p></a>
+    <a href="../../account/account.html"><p>Cuenta</p></a>
+</header>
+<section>
+    <div id="Title">
+        <h1>Formulario para solicitar servicios</h1>
+    </div>
+    <form action="#" onsubmit="handleRequest()">
+        <div id="InformacionServicio">
+            <h2>¿Qué tipo de servicio necesita?</h2>
+            <label for="serviceType">Tipo de servicio:</label>
+            <select id="serviceType" name="serviceType">
+            </select>
+        </div>
+        <div id="InformacionFecha">
+            <h2>¿Cuándo necesita el servicio?</h2>
+            <div id="ContenedorFechas">
+                <div id="FechaYFormulario">
+                    <label for="date">Fecha:</label>
+                    <input type="date" id="date" name="date" required><br><br>
+                    <label for="hour">Hora:</label>
+                    <input type="time" id="hour" name="hour" required>
+                </div>
+            </div>
+        </div>
+        <div id="DescripcionProblema">
+            <h2>Describa el problema</h2>
+            <div id="DescripcionProblemas">
+                <label for="description"></label>
+                <textarea id="description" name="description" rows="7" cols="75" required></textarea>
+            </div>
+        </div>
+        <div id="BotonSolicitar">
+            <button type="submit">Solicitar</button>
+        </div>
+    </form>
+</section>
+<footer>
+    <p>© 2024 FugaFix. Todos los derechos reservados.</p>
+</footer>
+</body>
+</html>
