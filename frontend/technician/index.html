@@ -12,15 +12,15 @@
     <title>Fugafix | Técnico</title>
 </head>
 <body>
+<script src="../index.js"></script>
+<script src="index.js"></script>
 <header class="header">
     <img class="logo-navbar" src="../images/imagotipo-500x500.svg" alt="Fugafix Imagotipo">
-    <button class="red-button">
-        <a href="../index.html">Cerrar sesión</a>
-    </button>
+    <button type="button" onclick="handleLogout()" class="red-button">Cerrar sesión</button>
 </header>
 <main>
     <section class="technician-welcome">
-            <h1>Hola de nuevo Tecnico Javier</h1>   
+        <h1 id="technician-welcome-text"></h1>
     </section>
     <div id="flex-container">
         <section class="list-services">
@@ -28,43 +28,15 @@
                 <h2>SERVICIOS DE HOY</h2>
             </div>
             <h4>Presione para ver mas detalles del servicio</h4>
-            <article id="no.servicio">
-                <a href="service/details.html"><p>Reparacion de Fuga de Agua</p></a>
-            </article>
-            <article id="no.servicio">
-                <p>Mantenimiento y Lavado de Tinacos</p>
-            </article>
-            <article id="no.servicio">
-                <p>Instalacion de calentador de Agua</p>
-            </article>
+            <div id="services-container">
 
-        </section>
-        <!-- <section class="list-material">
-            <div class="title">
-                <h2>MATERIAL DISPONIBLE</h2>
             </div>
-            <article id="material">
-                <p>MATERIAL 1</p>
-            </article>
-            <article id="material">
-                <p>MATERIAL 2</p>
-            </article>
-            <article id="material">
-                <p>MATERIAL 3</p>
-            </article>
-            <article id="material">
-                <p>MATERIAL 4</p>
-            </article>
-            
-            <button class="blue-button"id="button-generate-material-report">
-                <a href="index.html">GENERAR REPORTE </a>
-            </button>
-        </section> -->
+        </section>
     </div>
 
 </main>
 <footer>
-<p>2024 Fugafix. Todos los derechso reservados</p> 
+    <p>2024 Fugafix. Todos los derechso reservados</p>
 </footer>
 
 

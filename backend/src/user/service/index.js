@@ -1,7 +1,7 @@
 const { client } = require('../../database');
 const express = require('express');
 const router = express.Router();
-const { fetchAvailableTechnician } = require('../../technician');
+const { fetchAvailableTechnician } = require('../../technician/utility');
 const moment = require("moment");
 const e = require("express");
 
@@ -14,7 +14,7 @@ const USER_INFO_QUERY = `
     WHERE p.id = $1`;
 const USER_ACTIVE_SERVICE_QUERY = 'SELECT servicio_activo FROM usuario WHERE id = $1';
 const INSERT_SERVICE_REQUEST_QUERY = `
-    INSERT INTO servicio_solicitud (fecha_servicio, hora_servicio, id_persona, id_tecnico, tipo_servicio, descripcion) 
+    INSERT INTO servicio_solicitud (fecha_servicio, hora_servicio, id_usuario, id_tecnico, tipo_servicio, descripcion) 
     VALUES ($1, $2, $3, $4, $5, $6)`;
 const UPDATE_USER_SERVICE_QUERY = `
     UPDATE usuario 
@@ -31,9 +31,10 @@ const GET_SERVICE_STATUS_QUERY = `
            s.estado,
            s.id
     FROM servicio_solicitud s
-             JOIN persona p ON s.id_persona = p.id
+             JOIN tecnico t ON s.id_tecnico = t.id
+             JOIN persona p ON t.id = p.id
              JOIN tipo_servicio ts ON s.tipo_servicio = ts.id
-    WHERE p.id = $1;`
+    WHERE s.id_usuario = $1;`
 
 const handleError = (res, status, error) => {
     console.error(error);

@@ -117,12 +117,11 @@ VALUES (1, 1, 1),
 
 CREATE TABLE IF NOT EXISTS tecnico
 (
-    id                   SERIAL PRIMARY KEY,
-    id_persona           INT     NOT NULL,
+    id                   INT PRIMARY KEY,
     activo               BOOLEAN NOT NULL DEFAULT TRUE,
     servicios_activos    INT     NOT NULL DEFAULT 0,
     servicios_realizados INT     NOT NULL DEFAULT 0,
-    FOREIGN KEY (id_persona) REFERENCES persona (id)
+    FOREIGN KEY (id) REFERENCES persona (id)
 );
 
 CREATE TYPE estado_servicio AS ENUM ('pendiente', 'en_curso', 'finalizado');
@@ -133,12 +132,12 @@ CREATE TABLE IF NOT EXISTS servicio_solicitud
     fecha_solicitud TIMESTAMP       NOT NULL DEFAULT CURRENT_TIMESTAMP,
     fecha_servicio  DATE            NOT NULL,
     hora_servicio   TIME            NOT NULL,
-    id_persona      INT             NOT NULL,
+    id_usuario      INT             NOT NULL,
     id_tecnico      INT             NOT NULL,
     tipo_servicio   INT             NOT NULL,
     descripcion     TEXT,
     estado          estado_servicio NOT NULL DEFAULT 'pendiente',
-    FOREIGN KEY (id_persona) REFERENCES persona (id),
+    FOREIGN KEY (id_usuario) REFERENCES persona (id),
     FOREIGN KEY (id_tecnico) REFERENCES tecnico (id),
     FOREIGN KEY (tipo_servicio) REFERENCES tipo_servicio (id)
 );
@@ -162,35 +161,35 @@ VALUES
 
 INSERT INTO persona (nombres, apellido_paterno, apellido_materno, email, contrasena, telefono, direccion_id, rol)
 VALUES
-    ('Técnico1zona1', 'Apellido1', 'Apellido1', 'tecnico1_zona1@example.com', 'hashedpassword1', '5512345671', 2, 'tecnico'),
-    ('Técnico2zona1', 'Apellido2', 'Apellido2', 'tecnico2_zona1@example.com', 'hashedpassword2', '5512345672', 2, 'tecnico'),
-    ('Usuario1zona1', 'Apellido1', 'Apellido1', 'usuario1_zona1@example.com', 'hashedpassword3', '5512345681', 2, 'usuario'),
-    ('Usuario2zona1', 'Apellido2', 'Apellido2', 'usuario2_zona1@example.com', 'hashedpassword4', '5512345682', 2, 'usuario');
+    ('Técnico1zona1', 'Apellido1', 'Apellido1', 'tecnico1_zona1@example.com', 'hashedpassword1', '5512345671', 1, 'tecnico'),
+    ('Técnico2zona1', 'Apellido2', 'Apellido2', 'tecnico2_zona1@example.com', 'hashedpassword2', '5512345672', 1, 'tecnico'),
+    ('Usuario1zona1', 'Apellido1', 'Apellido1', 'usuario1_zona1@example.com', 'hashedpassword3', '5512345681', 1, 'usuario'),
+    ('Usuario2zona1', 'Apellido2', 'Apellido2', 'usuario2_zona1@example.com', 'hashedpassword4', '5512345682', 1, 'usuario');
 
 -- Zona 2
 INSERT INTO persona (nombres, apellido_paterno, apellido_materno, email, contrasena, telefono, direccion_id, rol)
 VALUES
-    ('Técnico3zona2', 'Apellido3', 'Apellido3', 'tecnico3_zona2@example.com', 'hashedpassword5', '5512345673', 3, 'tecnico'),
-    ('Técnico4zona2', 'Apellido4', 'Apellido4', 'tecnico4_zona2@example.com', 'hashedpassword6', '5512345674', 3, 'tecnico'),
-    ('Usuario3zona2', 'Apellido3', 'Apellido3', 'usuario3_zona2@example.com', 'hashedpassword7', '5512345683', 3, 'usuario'),
-    ('Usuario4zona2', 'Apellido4', 'Apellido4', 'usuario4_zona2@example.com', 'hashedpassword8', '5512345684', 3, 'usuario');
+    ('Técnico3zona2', 'Apellido3', 'Apellido3', 'tecnico3_zona2@example.com', 'hashedpassword5', '5512345673', 2, 'tecnico'),
+    ('Técnico4zona2', 'Apellido4', 'Apellido4', 'tecnico4_zona2@example.com', 'hashedpassword6', '5512345674', 2, 'tecnico'),
+    ('Usuario3zona2', 'Apellido3', 'Apellido3', 'usuario3_zona2@example.com', 'hashedpassword7', '5512345683', 2, 'usuario'),
+    ('Usuario4zona2', 'Apellido4', 'Apellido4', 'usuario4_zona2@example.com', 'hashedpassword8', '5512345684', 2, 'usuario');
 
 -- Zona 3
 INSERT INTO persona (nombres, apellido_paterno, apellido_materno, email, contrasena, telefono, direccion_id, rol)
 VALUES
-    ('Técnico5zona3', 'Apellido5', 'Apellido5', 'tecnico5_zona3@example.com', 'hashedpassword9', '5512345675', 4, 'tecnico'),
-    ('Técnico6zona3', 'Apellido6', 'Apellido6', 'tecnico6_zona3@example.com', 'hashedpassword10', '5512345676', 4, 'tecnico'),
-    ('Usuario5zona3', 'Apellido5', 'Apellido5', 'usuario5_zona3@example.com', 'hashedpassword11', '5512345685', 4, 'usuario'),
-    ('Usuario6zona3', 'Apellido6', 'Apellido6', 'usuario6_zona3@example.com', 'hashedpassword12', '5512345686', 4, 'usuario');
+    ('Técnico5zona3', 'Apellido5', 'Apellido5', 'tecnico5_zona3@example.com', 'hashedpassword9', '5512345675', 3, 'tecnico'),
+    ('Técnico6zona3', 'Apellido6', 'Apellido6', 'tecnico6_zona3@example.com', 'hashedpassword10', '5512345676', 3, 'tecnico'),
+    ('Usuario5zona3', 'Apellido5', 'Apellido5', 'usuario5_zona3@example.com', 'hashedpassword11', '5512345685', 3, 'usuario'),
+    ('Usuario6zona3', 'Apellido6', 'Apellido6', 'usuario6_zona3@example.com', 'hashedpassword12', '5512345686', 3, 'usuario');
 
 -- Zona 4
 INSERT INTO persona (nombres, apellido_paterno, apellido_materno, email, contrasena, telefono, direccion_id, rol)
 VALUES
-    ('Técnico7zona4', 'Apellido7', 'Apellido7', 'tecnico7_zona4@example.com', 'hashedpassword13', '5512345677', 5, 'tecnico'),
-    ('Técnico8zona4', 'Apellido8', 'Apellido8', 'tecnico8_zona4@example.com', 'hashedpassword14', '5512345678', 5, 'tecnico'),
-    ('Usuario7zona4', 'Apellido7', 'Apellido7', 'usuario7_zona4@example.com', 'hashedpassword15', '5512345687', 5, 'usuario'),
-    ('Usuario8zona4', 'Apellido8', 'Apellido8', 'usuario8_zona4@example.com', 'hashedpassword16', '5512345688', 5, 'usuario');
+    ('Técnico7zona4', 'Apellido7', 'Apellido7', 'tecnico7_zona4@example.com', 'hashedpassword13', '5512345677', 4, 'tecnico'),
+    ('Técnico8zona4', 'Apellido8', 'Apellido8', 'tecnico8_zona4@example.com', 'hashedpassword14', '5512345678', 4, 'tecnico'),
+    ('Usuario7zona4', 'Apellido7', 'Apellido7', 'usuario7_zona4@example.com', 'hashedpassword15', '5512345687', 4, 'usuario'),
+    ('Usuario8zona4', 'Apellido8', 'Apellido8', 'usuario8_zona4@example.com', 'hashedpassword16', '5512345688', 4, 'usuario');
 
 
-INSERT INTO tecnico (id_persona)
+INSERT INTO tecnico (id)
 SELECT id FROM persona WHERE rol = 'tecnico';

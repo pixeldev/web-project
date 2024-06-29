@@ -55,6 +55,36 @@ main > div {
     margin: 10px auto;
 }
 
+#services-container div {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#services-container div h3 {
+    font-size: 1.1em;
+}
+
+#services-container div p {
+    font-size: 1em;
+}
+
+#services-container div button {
+    padding: 8px 25px;
+    border-radius: 25px;
+    background-color: var(--accent-200);
+    border-color: var(--accent-100);
+    color: var(--text-300)
+}
+
+#services-container div button:hover {
+    cursor: pointer;
+    /* increase size */
+    transform: scale(1.1);
+}
+
 /* contendro donde se mostrar el materia lqeu el tecnico cuenta en almacemn
 .list-material {
     width: 45%;

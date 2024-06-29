@@ -78,8 +78,8 @@ router.post('/', async (req, res) => {
     }
 });
 
-router.get('/role/:id', (req, res) => {
-    const userId = req.params.id;
+router.get('/role', (req, res) => {
+    const userId = req.query.userId;
     client.query('SELECT rol FROM persona WHERE id = $1', [userId], (err, result) => {
         if (err) {
             console.error(err);
@@ -90,7 +90,7 @@ router.get('/role/:id', (req, res) => {
             res.status(404).send('{"error": "User not found"}');
             return;
         }
-        res.send('{"role": "' + result.rows[0].rol + '"}');
+        res.send({role: result.rows[0].rol });
     });
 });
 

@@ -45,19 +45,19 @@ router.get('/authenticated', (req, res) => {
             res.status(404).send('{ "error": "Usuario no encontrado" }');
             return;
         }
-        res.status(200).send('{ "authenticated": ' + result.rows[0].autenticado + ' }');
+        res.status(200).send({authenticated: result.rows[0].autenticado});
     });
 });
 
 router.post('/logout', (req, res) => {
-    const id = req.body.id;
-    client.query('UPDATE persona SET autenticado = false WHERE id = $1', [id], (err) => {
+    const userId = req.query.userId;
+    client.query('UPDATE persona SET autenticado = false WHERE id = $1', [userId], (err) => {
         if (err) {
             console.error(err);
             res.status(500).send('{ "error": "Error al intentar cerrar sesión" }');
             return;
         }
-        res.status(200).send('{ "message": "Sesión cerrada correctamente" }');
+        res.status(200).send({ message: "Sesión cerrada correctamente" });
     });
 });
 

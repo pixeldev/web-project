@@ -13,12 +13,13 @@
 <body>
 <script src="../index.js"></script>
 <script src="index.js"></script>
+<script src="../../index.js"></script>
 <header class="header">
     <img class="logo-navbar" src="../../images/imagotipo-500x500.svg" alt="Fugafix Imagotipo">
     <a href="../"><p>Inicio</p></a>
-    <a href="../service/request"><p>Hacer Solicitud</p></a>
+    <button type=button onclick="goToCreateRequest()">Hacer solicitud</button>
     <button type=button onclick="goToRequestStatus()">Estado de solicitud</button>
-    <a href="index.html"><p>Cuenta</p></a>
+    <button type=button onclick="goToAccount()">Cuenta</button>
 </header>
 <section>
     <div id="Title">
@@ -63,7 +64,7 @@
             <a href="edition/index.html"><p>Editar datos</p></a>
     </div>
     <div id="closeSessionButton">
-            <a href="../../index.php">Cerrar Sesion</a>
+            <button type="button" onclick="handleLogout()">Cerrar Sesion</button>
     </div>
 </section>
 <footer>

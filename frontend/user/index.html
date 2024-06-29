@@ -10,14 +10,14 @@
     <title>Fugafix | Inicio</title>
 </head>
 <body>
-<script src="../prevent-login.js"></script>
+<script src="index.js"></script>
 
 <header class="header">
     <img class="logo-navbar" src="../images/imagotipo-500x500.svg" alt="Fugafix Imagotipo">
-    <a href="index.php"><p>Inicio</p></a>
-    <a href="service/request/index.html"><p>Hacer Solicitud</p></a>
-    <a href="service/status/index.html"><p>Estado de las solicitudes</p></a>
-    <a href="account/index.html"><p>Cuenta</p></a>
+    <a href="index.html"><p>Inicio</p></a>
+    <button type=button onclick="goToCreateRequest()">Hacer solicitud</button>
+    <button type=button onclick="goToRequestStatus()">Estado de solicitud</button>
+    <button type=button onclick="goToAccount()">Cuenta</button>
 </header>
 
 <main id="user-index-main">
@@ -96,7 +96,7 @@
             </div>
         </div>
         <div class="buttonContainer">
-            <a href="service/request/index.html"><p>Contrata un Servicio</p></a>
+            <button type=button onclick="goToCreateRequest()">Hacer solicitud</button>
         </div>
     </section>
 </main>

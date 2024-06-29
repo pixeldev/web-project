@@ -16,6 +16,8 @@ app.use('/service', require('./service'));
 app.use('/signup', require('./signup'));
 app.use('/user', require('./user'));
 app.use('/user/service', require('./user/service'));
+app.use('/technician', require('./technician'));
+app.use('/technician/service', require('./technician/service'));
 
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}!`);
