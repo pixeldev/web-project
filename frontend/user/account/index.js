@@ -1,6 +1,6 @@
 window.onload = function() {
     const userId = localStorage.getItem('userId');
-    fetch(`http://localhost:3000/user?userId=${userId}`, {
+    fetch(`http://199.127.62.211:3000/user?userId=${userId}`, {
         method: 'GET',
         headers: {
             'Content-Type': 'application/json',

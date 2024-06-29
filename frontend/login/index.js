@@ -8,7 +8,7 @@ function handleLogin() {
         data[key] = value;
     });
 
-    fetch('http://localhost:3000/login', {
+    fetch('http://199.127.62.211:3000/login', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',

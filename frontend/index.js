@@ -4,7 +4,7 @@ function handleLogout() {
         window.location.href = '/';
         return;
     }
-    fetch(`http://localhost:3000/login/logout?userId=${userId}`, {
+    fetch(`http://199.127.62.211:3000/login/logout?userId=${userId}`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
