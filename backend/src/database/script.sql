@@ -161,34 +161,34 @@ VALUES
 
 INSERT INTO persona (nombres, apellido_paterno, apellido_materno, email, contrasena, telefono, direccion_id, rol)
 VALUES
-    ('Técnico1zona1', 'Apellido1', 'Apellido1', 'tecnico1_zona1@example.com', 'hashedpassword1', '5512345671', 1, 'tecnico'),
-    ('Técnico2zona1', 'Apellido2', 'Apellido2', 'tecnico2_zona1@example.com', 'hashedpassword2', '5512345672', 1, 'tecnico'),
-    ('Usuario1zona1', 'Apellido1', 'Apellido1', 'usuario1_zona1@example.com', 'hashedpassword3', '5512345681', 1, 'usuario'),
-    ('Usuario2zona1', 'Apellido2', 'Apellido2', 'usuario2_zona1@example.com', 'hashedpassword4', '5512345682', 1, 'usuario');
+    ('Técnico1zona1', 'Apellido1', 'Apellido1', 'tecnico1_zona1@example.com', '1eb7d70751d88bc683d3e2887ee2aa0024db966cacf9e2f80a5d22b93f1b14a8e0fd1002f494620979774d4aebd62cbe5baa50e9050d480f589f833a8c651b60', '5512345671', 1, 'tecnico'),
+    ('Técnico2zona1', 'Apellido2', 'Apellido2', 'tecnico2_zona1@example.com', '1eb7d70751d88bc683d3e2887ee2aa0024db966cacf9e2f80a5d22b93f1b14a8e0fd1002f494620979774d4aebd62cbe5baa50e9050d480f589f833a8c651b60', '5512345672', 1, 'tecnico'),
+    ('Usuario1zona1', 'Apellido1', 'Apellido1', 'usuario1_zona1@example.com', '1eb7d70751d88bc683d3e2887ee2aa0024db966cacf9e2f80a5d22b93f1b14a8e0fd1002f494620979774d4aebd62cbe5baa50e9050d480f589f833a8c651b60', '5512345681', 1, 'usuario'),
+    ('Usuario2zona1', 'Apellido2', 'Apellido2', 'usuario2_zona1@example.com', '1eb7d70751d88bc683d3e2887ee2aa0024db966cacf9e2f80a5d22b93f1b14a8e0fd1002f494620979774d4aebd62cbe5baa50e9050d480f589f833a8c651b60', '5512345682', 1, 'usuario');
 
 -- Zona 2
 INSERT INTO persona (nombres, apellido_paterno, apellido_materno, email, contrasena, telefono, direccion_id, rol)
 VALUES
-    ('Técnico3zona2', 'Apellido3', 'Apellido3', 'tecnico3_zona2@example.com', 'hashedpassword5', '5512345673', 2, 'tecnico'),
-    ('Técnico4zona2', 'Apellido4', 'Apellido4', 'tecnico4_zona2@example.com', 'hashedpassword6', '5512345674', 2, 'tecnico'),
-    ('Usuario3zona2', 'Apellido3', 'Apellido3', 'usuario3_zona2@example.com', 'hashedpassword7', '5512345683', 2, 'usuario'),
-    ('Usuario4zona2', 'Apellido4', 'Apellido4', 'usuario4_zona2@example.com', 'hashedpassword8', '5512345684', 2, 'usuario');
+    ('Técnico3zona2', 'Apellido3', 'Apellido3', 'tecnico3_zona2@example.com', '1eb7d70751d88bc683d3e2887ee2aa0024db966cacf9e2f80a5d22b93f1b14a8e0fd1002f494620979774d4aebd62cbe5baa50e9050d480f589f833a8c651b60', '5512345673', 2, 'tecnico'),
+    ('Técnico4zona2', 'Apellido4', 'Apellido4', 'tecnico4_zona2@example.com', '1eb7d70751d88bc683d3e2887ee2aa0024db966cacf9e2f80a5d22b93f1b14a8e0fd1002f494620979774d4aebd62cbe5baa50e9050d480f589f833a8c651b60', '5512345674', 2, 'tecnico'),
+    ('Usuario3zona2', 'Apellido3', 'Apellido3', 'usuario3_zona2@example.com', '1eb7d70751d88bc683d3e2887ee2aa0024db966cacf9e2f80a5d22b93f1b14a8e0fd1002f494620979774d4aebd62cbe5baa50e9050d480f589f833a8c651b60', '5512345683', 2, 'usuario'),
+    ('Usuario4zona2', 'Apellido4', 'Apellido4', 'usuario4_zona2@example.com', '1eb7d70751d88bc683d3e2887ee2aa0024db966cacf9e2f80a5d22b93f1b14a8e0fd1002f494620979774d4aebd62cbe5baa50e9050d480f589f833a8c651b60', '5512345684', 2, 'usuario');
 
 -- Zona 3
 INSERT INTO persona (nombres, apellido_paterno, apellido_materno, email, contrasena, telefono, direccion_id, rol)
 VALUES
-    ('Técnico5zona3', 'Apellido5', 'Apellido5', 'tecnico5_zona3@example.com', 'hashedpassword9', '5512345675', 3, 'tecnico'),
-    ('Técnico6zona3', 'Apellido6', 'Apellido6', 'tecnico6_zona3@example.com', 'hashedpassword10', '5512345676', 3, 'tecnico'),
-    ('Usuario5zona3', 'Apellido5', 'Apellido5', 'usuario5_zona3@example.com', 'hashedpassword11', '5512345685', 3, 'usuario'),
-    ('Usuario6zona3', 'Apellido6', 'Apellido6', 'usuario6_zona3@example.com', 'hashedpassword12', '5512345686', 3, 'usuario');
+    ('Técnico5zona3', 'Apellido5', 'Apellido5', 'tecnico5_zona3@example.com', '1eb7d70751d88bc683d3e2887ee2aa0024db966cacf9e2f80a5d22b93f1b14a8e0fd1002f494620979774d4aebd62cbe5baa50e9050d480f589f833a8c651b60', '5512345675', 3, 'tecnico'),
+    ('Técnico6zona3', 'Apellido6', 'Apellido6', 'tecnico6_zona3@example.com', '1eb7d70751d88bc683d3e2887ee2aa0024db966cacf9e2f80a5d22b93f1b14a8e0fd1002f494620979774d4aebd62cbe5baa50e9050d480f589f833a8c651b60', '5512345676', 3, 'tecnico'),
+    ('Usuario5zona3', 'Apellido5', 'Apellido5', 'usuario5_zona3@example.com', '1eb7d70751d88bc683d3e2887ee2aa0024db966cacf9e2f80a5d22b93f1b14a8e0fd1002f494620979774d4aebd62cbe5baa50e9050d480f589f833a8c651b60', '5512345685', 3, 'usuario'),
+    ('Usuario6zona3', 'Apellido6', 'Apellido6', 'usuario6_zona3@example.com', '1eb7d70751d88bc683d3e2887ee2aa0024db966cacf9e2f80a5d22b93f1b14a8e0fd1002f494620979774d4aebd62cbe5baa50e9050d480f589f833a8c651b60', '5512345686', 3, 'usuario');
 
 -- Zona 4
 INSERT INTO persona (nombres, apellido_paterno, apellido_materno, email, contrasena, telefono, direccion_id, rol)
 VALUES
-    ('Técnico7zona4', 'Apellido7', 'Apellido7', 'tecnico7_zona4@example.com', 'hashedpassword13', '5512345677', 4, 'tecnico'),
-    ('Técnico8zona4', 'Apellido8', 'Apellido8', 'tecnico8_zona4@example.com', 'hashedpassword14', '5512345678', 4, 'tecnico'),
-    ('Usuario7zona4', 'Apellido7', 'Apellido7', 'usuario7_zona4@example.com', 'hashedpassword15', '5512345687', 4, 'usuario'),
-    ('Usuario8zona4', 'Apellido8', 'Apellido8', 'usuario8_zona4@example.com', 'hashedpassword16', '5512345688', 4, 'usuario');
+    ('Técnico7zona4', 'Apellido7', 'Apellido7', 'tecnico7_zona4@example.com', '1eb7d70751d88bc683d3e2887ee2aa0024db966cacf9e2f80a5d22b93f1b14a8e0fd1002f494620979774d4aebd62cbe5baa50e9050d480f589f833a8c651b60', '5512345677', 4, 'tecnico'),
+    ('Técnico8zona4', 'Apellido8', 'Apellido8', 'tecnico8_zona4@example.com', '1eb7d70751d88bc683d3e2887ee2aa0024db966cacf9e2f80a5d22b93f1b14a8e0fd1002f494620979774d4aebd62cbe5baa50e9050d480f589f833a8c651b60', '5512345678', 4, 'tecnico'),
+    ('Usuario7zona4', 'Apellido7', 'Apellido7', 'usuario7_zona4@example.com', '1eb7d70751d88bc683d3e2887ee2aa0024db966cacf9e2f80a5d22b93f1b14a8e0fd1002f494620979774d4aebd62cbe5baa50e9050d480f589f833a8c651b60', '5512345687', 4, 'usuario'),
+    ('Usuario8zona4', 'Apellido8', 'Apellido8', 'usuario8_zona4@example.com', '1eb7d70751d88bc683d3e2887ee2aa0024db966cacf9e2f80a5d22b93f1b14a8e0fd1002f494620979774d4aebd62cbe5baa50e9050d480f589f833a8c651b60', '5512345688', 4, 'usuario');
 
 
 INSERT INTO tecnico (id)
