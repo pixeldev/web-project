@@ -5,7 +5,7 @@ function goToRequestStatus() {
         window.location.href = '/login';
         return;
     }
-    fetch(`http://199.127.62.211:3000/user/service/active?userId=${userId}`, {
+    fetch(`https://proyecto-backend.houtave.com/user/service/active?userId=${userId}`, {
         method: 'GET',
         headers: {
             'Content-Type': 'application/json',
@@ -34,7 +34,7 @@ function goToAccount() {
         window.location.href = '/login';
         return;
     }
-    fetch(`http://199.127.62.211:3000/login/authenticated?id=${userId}`, {
+    fetch(`https://proyecto-backend.houtave.com/login/authenticated?id=${userId}`, {
         method: 'GET',
         headers: {
             'Content-Type': 'application/json',
@@ -51,7 +51,7 @@ function goToAccount() {
                 return;
             }
 
-            const roleResponse = await fetch(`http://199.127.62.211:3000/user/role?userId=${userId}`, {
+            const roleResponse = await fetch(`https://proyecto-backend.houtave.com/user/role?userId=${userId}`, {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',
@@ -76,7 +76,7 @@ function goToCreateRequest() {
         window.location.href = '/login';
         return;
     }
-    fetch(`http://199.127.62.211:3000/login/authenticated?id=${userId}`, {
+    fetch(`https://proyecto-backend.houtave.com/login/authenticated?id=${userId}`, {
         method: 'GET',
         headers: {
             'Content-Type': 'application/json',
@@ -92,7 +92,7 @@ function goToCreateRequest() {
                 window.location.href = '/login';
                 return;
             }
-            const result = await fetch(`http://199.127.62.211:3000/user/service/active?userId=${userId}`, {
+            const result = await fetch(`https://proyecto-backend.houtave.com/user/service/active?userId=${userId}`, {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',

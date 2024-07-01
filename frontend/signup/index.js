@@ -1,5 +1,5 @@
 window.onload = function() {
-    fetch('http://199.127.62.211:3000/address/city-hall', {
+    fetch('https://proyecto-backend.houtave.com/address/city-hall', {
         method: 'GET',
         headers: {
             'Content-Type': 'application/json',
@@ -45,7 +45,7 @@ function handleSignupButton() {
         data[key] = value;
     });
 
-    fetch('http://199.127.62.211:3000/signup', {
+    fetch('https://proyecto-backend.houtave.com/signup', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',

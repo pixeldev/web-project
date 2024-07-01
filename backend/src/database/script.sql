@@ -193,3 +193,6 @@ VALUES
 
 INSERT INTO tecnico (id)
 SELECT id FROM persona WHERE rol = 'tecnico';
+
+INSERT INTO usuario (id)
+SELECT id FROM persona WHERE rol = 'usuario';

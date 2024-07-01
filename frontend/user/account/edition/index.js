@@ -1,6 +1,6 @@
 window.onload = function() {
     const userId = localStorage.getItem('userId');
-    fetch(`http://199.127.62.211:3000/user?userId=${userId}`, {
+    fetch(`https://proyecto-backend.houtave.com/user?userId=${userId}`, {
         method: 'GET',
         headers: {
             'Content-Type': 'application/json',
@@ -22,7 +22,7 @@ window.onload = function() {
             document.getElementById('user-phone').value = data.phone;
         });
 
-    fetch('http://199.127.62.211:3000/address/city-hall', {
+    fetch('https://proyecto-backend.houtave.com/address/city-hall', {
         method: 'GET',
         headers: {
             'Content-Type': 'application/json',
@@ -55,7 +55,7 @@ function handleSaveChanges() {
 
     const userId = localStorage.getItem('userId');
 
-    fetch(`http://199.127.62.211:3000/user?userId=${userId}`, {
+    fetch(`https://proyecto-backend.houtave.com/user?userId=${userId}`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',

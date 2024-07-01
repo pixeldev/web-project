@@ -1,5 +1,5 @@
 window.onload = function() {
-    fetch('http://199.127.62.211:3000/service/types', {
+    fetch('https://proyecto-backend.houtave.com/service/types', {
         method: 'GET',
         headers: {
             'Content-Type': 'application/json',
@@ -49,7 +49,7 @@ function handleRequest() {
 
     console.log(data);
 
-    fetch('http://199.127.62.211:3000/user/service/request', {
+    fetch('https://proyecto-backend.houtave.com/user/service/request', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',

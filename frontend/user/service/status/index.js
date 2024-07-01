@@ -1,6 +1,6 @@
 window.onload = function() {
     const userId = localStorage.getItem('userId');
-    fetch(`http://199.127.62.211:3000/user/service/get?userId=${userId}`, {
+    fetch(`https://proyecto-backend.houtave.com/user/service/get?userId=${userId}`, {
         method: 'GET',
         headers: {
             'Content-Type': 'application/json',

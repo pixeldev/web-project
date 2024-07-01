@@ -7,7 +7,7 @@ window.onload = async function() {
         return;
     }
 
-    const nameResponse = await fetch(`http://199.127.62.211:3000/technician/name?userId=${userId}`);
+    const nameResponse = await fetch(`https://proyecto-backend.houtave.com/technician/name?userId=${userId}`);
 
     if (nameResponse.status !== 200) {
         alert(nameResponse.error);
@@ -18,7 +18,7 @@ window.onload = async function() {
     const nameResponseJson = await nameResponse.json();
     document.getElementById('technician-welcome-text').innerText = `Bienvenido, ${nameResponseJson.name}`;
 
-    const todayServicesResponse = await fetch(`http://199.127.62.211:3000/technician/service/today?technicianId=${userId}`);
+    const todayServicesResponse = await fetch(`https://proyecto-backend.houtave.com/technician/service/today?technicianId=${userId}`);
 
     if (todayServicesResponse.status !== 200) {
         alert(todayServicesResponse.error);

@@ -7,12 +7,7 @@ connectToDatabase();
 const app = express();
 const port = 3000;
 
-const corsOptions = {
-    origin: 'http://199.127.62.211',
-    optionsSuccessStatus: 200
-}
-
-app.use(cors(corsOptions));
+app.use(cors());
 app.use(express.json());
 
 app.use('/address', require('./address'));
